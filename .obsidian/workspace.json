@@ -1,0 +1,263 @@
+{
+  "main": {
+    "id": "a333b6d8ec75d2f6",
+    "type": "split",
+    "children": [
+      {
+        "id": "98bd3d7ef9614215",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cd536092f97d7ed4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Files to make.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Files to make"
+            }
+          }
+        ]
+      },
+      {
+        "id": "e70ecc0f172298bc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0214bd7bfb54c56a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Coding/Tutorials/Dual Boot Setup Surface.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Dual Boot Setup Surface"
+            }
+          }
+        ]
+      },
+      {
+        "id": "7808fb7ee818a56a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f0c9562c3318e3f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_META/Obsidian_Markdown_CheatSheet.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Obsidian_Markdown_CheatSheet"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c4bfeb0c42824d12",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd8c69b1d4bd5819",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eeea22d634f9d98b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c956c8d8107f3799",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:chat-gpt",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "5db7e9a158aa5453",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9a939ea98abde7fe",
+    "type": "split",
+    "children": [
+      {
+        "id": "897ef77ff18a19e0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b82ed9afa9948633",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ttttse.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for ttttse"
+            }
+          },
+          {
+            "id": "d9a8f2f77aeb23b4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ttttse.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from ttttse"
+            }
+          },
+          {
+            "id": "1694cb22b6302869",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "0a9c8d26c54f7336",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ttttse.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of ttttse"
+            }
+          },
+          {
+            "id": "a5233b0d4c469674",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "calendar"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "cd536092f97d7ed4",
+  "lastOpenFiles": [
+    "Coding/Tutorials/Dual Boot Setup Surface.md",
+    "Files to make.md",
+    "Linux – Terminal Grundlagen.md",
+    "00_META/Obsidian_Markdown_CheatSheet.md",
+    "00_META/Templates/Coding-Template.md",
+    "00_META/Prompts/Masterprompt.md",
+    "00_META/Templates/Tutorial - Template.md",
+    "2131313.md",
+    "Temp/Dateisortierung NAS.md",
+    "Temp",
+    "Untitled 1.md",
+    "00_META/Templates/Coding - Template_old.md",
+    "313.md",
+    "snflksnfks.md",
+    "451.md",
+    "sbfksdbf.md",
+    "Untitled.canvas",
+    "lsblnds.md",
+    "dgfgdfgdf.md",
+    "00_META/Templater_Scripts/tech_stack.js",
+    "00_META/tech_stack.js",
+    "00_META/Templater_Scripts/tech_stack..js",
+    "00_META/Templater_Scripts/tech_stack.js.disabled.js",
+    "00_META/Templates/zzz_test_template.md.md",
+    "uddybjy.md",
+    "testststs.md",
+    "ttttse.md",
+    "00_META/Templater_Scripts/tech_stack.js.md",
+    "trest.md",
+    "00_META/Templater_Scripts",
+    "techstack.md",
+    "00_META/Templates/Research - Template.md",
+    "est.md",
+    "Coding/Tutorials",
+    "00_META/Prompts",
+    "Ideen",
+    "00_META/Templates"
+  ]
+}
