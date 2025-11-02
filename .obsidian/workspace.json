@@ -4,61 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "98bd3d7ef9614215",
+        "id": "d238b4dc0d8722e9",
         "type": "tabs",
         "children": [
           {
-            "id": "cd536092f97d7ed4",
+            "id": "53a56f1e2ea0c2e2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Files to make.md",
+                "file": "00_META/Templates/Coding Neu - Template.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Files to make"
+              "title": "Coding Neu - Template"
             }
-          }
-        ]
-      },
-      {
-        "id": "e70ecc0f172298bc",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "0214bd7bfb54c56a",
+            "id": "796c4c24b065b968",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding/Tutorials/Dual Boot Setup Surface.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Dual Boot Setup Surface"
-            }
-          }
-        ]
-      },
-      {
-        "id": "7808fb7ee818a56a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "f0c9562c3318e3f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_META/Obsidian_Markdown_CheatSheet.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Obsidian_Markdown_CheatSheet"
+              "title": "Untitled"
             }
           }
         ]
@@ -220,19 +194,24 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "cd536092f97d7ed4",
+  "active": "53a56f1e2ea0c2e2",
   "lastOpenFiles": [
-    "Coding/Tutorials/Dual Boot Setup Surface.md",
-    "Files to make.md",
-    "Linux – Terminal Grundlagen.md",
+    "Untitled.md",
+    "00_META/Templates/Coding Neu - Template.md",
     "00_META/Obsidian_Markdown_CheatSheet.md",
     "00_META/Templates/Coding-Template.md",
+    "templater test.md",
+    "test template.md",
+    "00_META/Templater_Overview.md",
+    "00_META/Templates/Research - Template.md",
+    "2131313.md",
+    "Files to make.md",
+    "Coding/Linux – Terminal Grundlagen.md",
+    "Coding/Tutorials/Dual Boot Setup Surface.md",
     "00_META/Prompts/Masterprompt.md",
     "00_META/Templates/Tutorial - Template.md",
-    "2131313.md",
     "Temp/Dateisortierung NAS.md",
     "Temp",
-    "Untitled 1.md",
     "00_META/Templates/Coding - Template_old.md",
     "313.md",
     "snflksnfks.md",
@@ -249,12 +228,7 @@
     "uddybjy.md",
     "testststs.md",
     "ttttse.md",
-    "00_META/Templater_Scripts/tech_stack.js.md",
-    "trest.md",
     "00_META/Templater_Scripts",
-    "techstack.md",
-    "00_META/Templates/Research - Template.md",
-    "est.md",
     "Coding/Tutorials",
     "00_META/Prompts",
     "Ideen",

@@ -1,14 +1,14 @@
 ---
-title: "<% tp.file.title %>"
-date: "<% tp.date.now('YYYY-MM-DD') %>"
+title: <% tp.file.title %>
+date: <% tp.date.now('YYYY-MM-DD') %>
 tags:
   - project
   - coding
-  - "<% tp.user.tech_stack() %>"
+  - <% tp.user.tech_stack() %>
 aliases: []
 status: draft
 related:
-  - [[KnowledgeVault]]
+  - - - KnowledgeVault
 ---
 
 # <% tp.file.title %>
