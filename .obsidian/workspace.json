@@ -8,31 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "53a56f1e2ea0c2e2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_META/Templates/Coding Neu - Template.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Coding Neu - Template"
-            }
-          },
-          {
             "id": "796c4c24b065b968",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "00_META/Templates/Coding-Template.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Coding-Template"
+            }
+          },
+          {
+            "id": "ccf442677ded9297",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "test templste 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "test templste 1"
             }
           }
         ]
@@ -92,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 265.5
   },
   "right": {
     "id": "9a939ea98abde7fe",
@@ -171,17 +171,296 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "f423e38c13751ac9",
+            "type": "leaf",
+            "state": {
+              "type": "modal-form-manage-forms-view",
+              "state": {},
+              "icon": "documents",
+              "title": "Manage forms"
+            }
+          },
+          {
+            "id": "c1083bf5bc07f98f",
+            "type": "leaf",
+            "state": {
+              "type": "modal-form-template-builder-view",
+              "state": {
+                "title": "Example form",
+                "name": "example-form",
+                "fields": [
+                  {
+                    "name": "name",
+                    "label": "Name",
+                    "description": "It is named how?",
+                    "isRequired": true,
+                    "input": {
+                      "type": "text",
+                      "hidden": false
+                    }
+                  },
+                  {
+                    "name": "age",
+                    "label": "Age",
+                    "description": "How old",
+                    "isRequired": true,
+                    "input": {
+                      "type": "number",
+                      "hidden": false
+                    }
+                  },
+                  {
+                    "name": "dateOfBirth",
+                    "label": "Date of Birth",
+                    "description": "When were you born?",
+                    "input": {
+                      "type": "date",
+                      "hidden": false
+                    }
+                  },
+                  {
+                    "name": "timeOfDay",
+                    "label": "Time of day",
+                    "description": "The time you can do this",
+                    "input": {
+                      "type": "time",
+                      "hidden": false
+                    }
+                  },
+                  {
+                    "name": "is_family",
+                    "label": "Is family",
+                    "description": "If it is part of the family",
+                    "input": {
+                      "type": "toggle",
+                      "hidden": false
+                    }
+                  },
+                  {
+                    "name": "favorite_book",
+                    "label": "Favorite book",
+                    "description": "Pick one",
+                    "input": {
+                      "type": "note",
+                      "folder": "Books"
+                    }
+                  },
+                  {
+                    "name": "folder",
+                    "label": "The destination folder",
+                    "description": "It offers auto-completion to existing folders",
+                    "input": {
+                      "type": "folder"
+                    }
+                  },
+                  {
+                    "name": "multi_example",
+                    "label": "Multi select folder",
+                    "description": "Allows to pick many notes from a folder",
+                    "input": {
+                      "type": "multiselect",
+                      "source": "notes",
+                      "folder": "Books"
+                    }
+                  },
+                  {
+                    "name": "multi_example_2",
+                    "label": "Multi select fixed",
+                    "description": "Allows to pick many notes from a fixed list",
+                    "input": {
+                      "type": "multiselect",
+                      "source": "fixed",
+                      "multi_select_options": [
+                        "Android",
+                        "iOS",
+                        "Windows",
+                        "MacOS",
+                        "Linux",
+                        "Solaris",
+                        "MS2"
+                      ],
+                      "allowUnknownValues": false
+                    }
+                  },
+                  {
+                    "name": "multi_select_dataview",
+                    "label": "Multi select dataview",
+                    "description": "Allows to pick several values from a dv query",
+                    "input": {
+                      "type": "multiselect",
+                      "source": "dataview",
+                      "query": "dv.pages(\"#person\").map(p => p.file.name)",
+                      "allowUnknownValues": true
+                    }
+                  },
+                  {
+                    "name": "best_fried",
+                    "label": "Best friend",
+                    "description": "Select of type note from a folder",
+                    "input": {
+                      "type": "select",
+                      "source": "notes",
+                      "folder": "People"
+                    }
+                  },
+                  {
+                    "name": "dataview_example",
+                    "label": "Dataview example",
+                    "description": "Only people matching the dataview query will be shown",
+                    "input": {
+                      "type": "dataview",
+                      "query": "dv.pages(\"#person\").filter(p => p.age < 30).map(p => p.file.name)"
+                    }
+                  },
+                  {
+                    "name": "friendship_level",
+                    "label": "Friendship level",
+                    "description": "How good friends are you?",
+                    "input": {
+                      "type": "slider",
+                      "min": 0,
+                      "max": 10
+                    }
+                  },
+                  {
+                    "name": "favorite_meal",
+                    "label": "Favorite meal",
+                    "description": "Pick one option",
+                    "input": {
+                      "type": "select",
+                      "source": "fixed",
+                      "options": [
+                        {
+                          "value": "pizza",
+                          "label": "🍕 Pizza"
+                        },
+                        {
+                          "value": "pasta",
+                          "label": "🍝 Pasta"
+                        },
+                        {
+                          "value": "burger",
+                          "label": "🍔 Burger"
+                        },
+                        {
+                          "value": "salad",
+                          "label": "🥗 Salad"
+                        },
+                        {
+                          "value": "steak",
+                          "label": "🥩 Steak"
+                        },
+                        {
+                          "value": "sushi",
+                          "label": "🍣 Sushi"
+                        },
+                        {
+                          "value": "ramen",
+                          "label": "🍜 Ramen"
+                        },
+                        {
+                          "value": "tacos",
+                          "label": "🌮 Tacos"
+                        },
+                        {
+                          "value": "fish",
+                          "label": "🐟 Fish"
+                        },
+                        {
+                          "value": "chicken",
+                          "label": "🍗 Chicken"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "some notes",
+                    "label": "Multi line notes",
+                    "description": "Put your thoughts here",
+                    "input": {
+                      "type": "textarea",
+                      "hidden": false
+                    }
+                  },
+                  {
+                    "name": "hidden_field",
+                    "label": "This field is hidden",
+                    "description": "It is useful for internal data",
+                    "input": {
+                      "type": "text",
+                      "hidden": true
+                    }
+                  },
+                  {
+                    "name": "Tags",
+                    "description": "Tags input example",
+                    "input": {
+                      "type": "tag",
+                      "hidden": false
+                    }
+                  },
+                  {
+                    "name": "profile_picture",
+                    "label": "Profile Picture",
+                    "description": "Upload a profile picture. It will be saved in the attachments folder with the current date.",
+                    "input": {
+                      "type": "image",
+                      "filenameTemplate": "profile-{{datetime}}.png",
+                      "saveLocation": "attachments/profile_pictures"
+                    }
+                  },
+                  {
+                    "name": "pdf",
+                    "description": "PDF example",
+                    "input": {
+                      "type": "file",
+                      "folder": "attachments/pdfs",
+                      "allowedExtensions": [
+                        "pdf"
+                      ]
+                    }
+                  },
+                  {
+                    "name": "document",
+                    "description": "Document block example",
+                    "input": {
+                      "type": "document_block",
+                      "body": "return `Hello ${form.name}!<br> Your best friend is <b>${form.best_fried}</b>`"
+                    }
+                  }
+                ],
+                "version": "1"
+              },
+              "icon": "lucide-file",
+              "title": "Template Builder"
+            }
+          },
+          {
+            "id": "893cbd597471fb86",
+            "type": "leaf",
+            "state": {
+              "type": "modal-form-edit-form-view",
+              "state": {
+                "title": "",
+                "name": "",
+                "version": "1",
+                "fields": []
+              },
+              "icon": "note-glyph",
+              "title": "Edit form"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 734.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,47 +470,48 @@
       "daily-notes:Open today's daily note": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "modalforms:Edit forms": false
     }
   },
-  "active": "53a56f1e2ea0c2e2",
+  "active": "796c4c24b065b968",
   "lastOpenFiles": [
-    "Untitled.md",
-    "00_META/Templates/Coding Neu - Template.md",
-    "00_META/Obsidian_Markdown_CheatSheet.md",
+    "00_META/Templates/Coding-Template 1.md",
+    "Coding Template Fin.md",
+    "test templste 1.md",
     "00_META/Templates/Coding-Template.md",
-    "templater test.md",
-    "test template.md",
+    "00_META/forms/coding.yaml",
+    "00_META/forms/Untitled Document",
     "00_META/Templater_Overview.md",
     "00_META/Templates/Research - Template.md",
-    "2131313.md",
+    "00_META/Templates/Coding-Template_og.md",
+    "form modal test.md",
     "Files to make.md",
-    "Coding/Linux – Terminal Grundlagen.md",
-    "Coding/Tutorials/Dual Boot Setup Surface.md",
-    "00_META/Prompts/Masterprompt.md",
+    "Projekte/ATLAS/HDD Checks Recherche.md",
     "00_META/Templates/Tutorial - Template.md",
-    "Temp/Dateisortierung NAS.md",
+    "00_META/Templates/Coding Neu - Template.md",
+    "00_META/Templates/modal form test.md",
+    "00_META/forms/coding.yaml.md",
+    "Coding-Tempate.md",
+    "form test.md",
+    "00_META/Templates/zzz_test_template.md.md",
+    "test template.md",
+    "Coding/Linux - Themes Settings To Save.md",
+    "Projekte/ATLAS/hdd_health.sh — SMART-Analyse.md",
+    "00_META/forms",
+    "Coding/Linux – Terminal Grundlagen.md",
+    "Projekte/ATLAS/hdd_surface_bench.sh – Read-Only Oberflächenscan & Benchmark.md",
+    "00_META/Obsidian_Markdown_CheatSheet.md",
+    "Coding/Tutorials/Dual Boot Setup Surface.md",
+    "ToDo's/ToDo_Linux.md",
+    "Projekte/ATLAS",
+    "Projekte",
+    "templater test.md",
+    "ToDo's",
     "Temp",
-    "00_META/Templates/Coding - Template_old.md",
-    "313.md",
-    "snflksnfks.md",
-    "451.md",
-    "sbfksdbf.md",
     "Untitled.canvas",
-    "lsblnds.md",
-    "dgfgdfgdf.md",
     "00_META/Templater_Scripts/tech_stack.js",
     "00_META/tech_stack.js",
-    "00_META/Templater_Scripts/tech_stack..js",
-    "00_META/Templater_Scripts/tech_stack.js.disabled.js",
-    "00_META/Templates/zzz_test_template.md.md",
-    "uddybjy.md",
-    "testststs.md",
-    "ttttse.md",
-    "00_META/Templater_Scripts",
-    "Coding/Tutorials",
-    "00_META/Prompts",
-    "Ideen",
-    "00_META/Templates"
+    "00_META/Templater_Scripts/tech_stack..js"
   ]
 }

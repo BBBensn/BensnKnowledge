@@ -1,16 +1,20 @@
-<% "---" %>
-title: "<% tp.file.title %>"
-created: "<% tp.file.creation_date('YYYY-MM-DD HH:mm') %>"
-modified: "<% tp.file.last_modified_date('YYYY-MM-DD HH:mm') %>"
-<%*
-  const modalForm = app.plugins.plugins.modalforms.api;
-  const result = await modalForm.openForm("Coding-Form");
-  tR += result.asFrontmatterString();
--%>
-<% "---" %>
+---
+title: <% tp.file.title %>
+date: <% tp.date.now('YYYY-MM-DD') %>
+tags:
+  - project
+  - coding
+  - <% tp.user.tech_stack() %>
+aliases: []
+status: draft
+related:
+  - - - KnowledgeVault
+---
 
 # <% tp.file.title %>
 
+
+
 ## Zielsetzung
 
 
@@ -79,7 +83,6 @@ modified: "<% tp.file.last_modified_date('YYYY-MM-DD HH:mm') %>"
 ---
 ## Referenzen / Ressourcen
 
-Siehe auch: <% result.get("related") %>
-Repo - Link:  <% result.get("repo") %>
+
 
 ---
