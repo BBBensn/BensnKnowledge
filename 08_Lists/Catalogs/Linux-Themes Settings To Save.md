@@ -1,0 +1,4 @@
+- Dock
+- custom Icons (Ars-Dark Icons)
+- ksnip theme
+- 

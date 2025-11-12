@@ -1,5 +1,0 @@
-- [ ] Transparent Panels 
-- [ ] cheatsheet
-- [ ] spotlight transparent machen (wollt ich machen bevor ich mit screenshots abgelenkt wurde)
-- [ ] fenstersnapping/sizing 
-- [ ] Druchgehende Colorcodes (z.B. ksnip noch anpassen)

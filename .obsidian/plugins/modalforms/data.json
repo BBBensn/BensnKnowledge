@@ -248,6 +248,810 @@
         }
       ],
       "version": "1"
+    },
+    {
+      "title": "Coding",
+      "name": "Coding-Form",
+      "fields": [
+        {
+          "name": "tech_stack",
+          "label": "Tech-Stack",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "python",
+              "javascript",
+              "typescript",
+              "react",
+              "vue",
+              "svelte",
+              "flask",
+              "fastapi",
+              "django",
+              "node"
+            ],
+            "allowUnknownValues": false
+          }
+        },
+        {
+          "name": "status",
+          "label": "Status",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "draft",
+                "label": "draft"
+              },
+              {
+                "value": "planned",
+                "label": "planned"
+              },
+              {
+                "value": "active",
+                "label": "active"
+              },
+              {
+                "value": "paused",
+                "label": "paused"
+              },
+              {
+                "value": "done",
+                "label": "done"
+              }
+            ]
+          }
+        },
+        {
+          "name": "related",
+          "label": "Related",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "ai_involvement",
+          "label": "AI-Involvement",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "human",
+                "label": "human"
+              },
+              {
+                "value": "partly_ai",
+                "label": "partly_ai"
+              },
+              {
+                "value": "ai_written",
+                "label": "ai_written"
+              }
+            ]
+          }
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "tag",
+            "hidden": false
+          }
+        },
+        {
+          "name": "aliases",
+          "label": "Aliases",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "repo",
+          "label": "Repo URL",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "summary",
+          "label": "Summary",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        }
+      ],
+      "version": "1"
+    },
+    {
+      "title": "Research",
+      "name": "Research-Form",
+      "fields": [
+        {
+          "name": "topic",
+          "label": "Topic",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "question",
+          "label": "Research Question",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "status",
+          "label": "Status",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "Idea",
+                "label": "idea"
+              },
+              {
+                "value": "Ongoing",
+                "label": "ongoing"
+              },
+              {
+                "value": "Done",
+                "label": "done"
+              }
+            ]
+          }
+        },
+        {
+          "name": "related",
+          "label": "Related",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "ai_involvement",
+          "label": "AI-Involvement",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "Manual",
+                "label": "manual"
+              },
+              {
+                "value": "Partly AI",
+                "label": "partly_ai"
+              },
+              {
+                "value": "AI Written",
+                "label": "ai_written"
+              }
+            ]
+          }
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "tag",
+            "hidden": false
+          }
+        },
+        {
+          "name": "aliases",
+          "label": "Aliases",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "summary",
+          "label": "Summary",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        }
+      ],
+      "version": "1"
+    },
+    {
+      "title": "Tutorial",
+      "name": "Tutorial-Form",
+      "fields": [
+        {
+          "name": "topic",
+          "label": "Topic",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "difficulty",
+          "label": "Difficulty",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "beginner",
+                "label": "Beginner"
+              },
+              {
+                "value": "intermediate",
+                "label": "Intermediate"
+              },
+              {
+                "value": "advanced",
+                "label": "Advanced"
+              }
+            ]
+          }
+        },
+        {
+          "name": "status",
+          "label": "Status",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "draft",
+                "label": "draft"
+              },
+              {
+                "value": "wip",
+                "label": "WIP"
+              },
+              {
+                "value": "done",
+                "label": "done"
+              }
+            ]
+          }
+        },
+        {
+          "name": "related",
+          "label": "Related",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "ai_involvement",
+          "label": "AI-Involvement",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "human",
+                "label": "human"
+              },
+              {
+                "value": "partly_ai",
+                "label": "partly_ai"
+              },
+              {
+                "value": "ai_written",
+                "label": "ai_written"
+              }
+            ]
+          }
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "tag",
+            "hidden": false
+          }
+        },
+        {
+          "name": "aliases",
+          "label": "Aliases",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "summary",
+          "label": "Summary",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        }
+      ],
+      "version": "1"
+    },
+    {
+      "title": "ToDo",
+      "name": "ToDo-Form",
+      "fields": [
+        {
+          "name": "task",
+          "label": "Task",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "priority",
+          "label": "Priority",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "low",
+                "label": "Low"
+              },
+              {
+                "value": "medium",
+                "label": "Medium"
+              },
+              {
+                "value": "high",
+                "label": "High"
+              },
+              {
+                "value": "critical",
+                "label": "Critical"
+              }
+            ]
+          }
+        },
+        {
+          "name": "deadline?",
+          "label": "Deadline?",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "toggle",
+            "hidden": false
+          }
+        },
+        {
+          "name": "due",
+          "label": "Due Date",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "deadline?",
+            "type": "boolean",
+            "value": true
+          },
+          "input": {
+            "type": "date",
+            "hidden": false
+          }
+        },
+        {
+          "name": "context",
+          "label": "Context",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "coding",
+                "label": "Coding"
+              },
+              {
+                "value": "research",
+                "label": "Research"
+              },
+              {
+                "value": "design",
+                "label": "Design"
+              },
+              {
+                "value": "fashion",
+                "label": "Fashion"
+              },
+              {
+                "value": "personal",
+                "label": "Personal"
+              },
+              {
+                "value": "work",
+                "label": "Work"
+              }
+            ]
+          }
+        },
+        {
+          "name": "status",
+          "label": "Status",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "todo",
+                "label": "To do"
+              },
+              {
+                "value": "in_progress",
+                "label": "In Progress"
+              },
+              {
+                "value": "waiting",
+                "label": "Waiting"
+              },
+              {
+                "value": "done",
+                "label": "Done"
+              }
+            ]
+          }
+        },
+        {
+          "name": "related",
+          "label": "Related",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "ai_involvement",
+          "label": "AI-Involvement",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "human",
+                "label": "human"
+              },
+              {
+                "value": "partly_ai",
+                "label": "partly_ai"
+              },
+              {
+                "value": "ai_written",
+                "label": "ai_written"
+              }
+            ]
+          }
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "tag",
+            "hidden": false
+          }
+        }
+      ],
+      "version": "1"
+    },
+    {
+      "title": "Note",
+      "name": "Note-Form",
+      "fields": [
+        {
+          "name": "topic",
+          "label": "Topic",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "context",
+          "label": "Context",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "coding",
+                "label": "Coding"
+              },
+              {
+                "value": "research",
+                "label": "Research"
+              },
+              {
+                "value": "design",
+                "label": "Design"
+              },
+              {
+                "value": "fashion",
+                "label": "Fashion"
+              },
+              {
+                "value": "personal",
+                "label": "Personal"
+              },
+              {
+                "value": "work",
+                "label": "Work"
+              }
+            ]
+          }
+        },
+        {
+          "name": "related",
+          "label": "Related",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "ai_involvement",
+          "label": "AI-Involvement",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "human",
+                "label": "human"
+              },
+              {
+                "value": "partly_ai",
+                "label": "partly_ai"
+              },
+              {
+                "value": "ai_written",
+                "label": "ai_written"
+              }
+            ]
+          }
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "tag",
+            "hidden": false
+          }
+        },
+        {
+          "name": "summary",
+          "label": "Summary",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        }
+      ],
+      "version": "1"
+    },
+    {
+      "title": "Idea",
+      "name": "Note_Idea-Form",
+      "fields": [
+        {
+          "name": "topic",
+          "label": "Topic",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "context",
+          "label": "Context",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "coding",
+                "label": "Coding"
+              },
+              {
+                "value": "research",
+                "label": "Research"
+              },
+              {
+                "value": "design",
+                "label": "Design"
+              },
+              {
+                "value": "fashion",
+                "label": "Fashion"
+              },
+              {
+                "value": "personal",
+                "label": "Personal"
+              },
+              {
+                "value": "work",
+                "label": "Work"
+              }
+            ]
+          }
+        },
+        {
+          "name": "status",
+          "label": "Status",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "concept",
+                "label": "Concept"
+              },
+              {
+                "value": "draft",
+                "label": "Draft"
+              },
+              {
+                "value": "in_development",
+                "label": "In Development"
+              },
+              {
+                "value": "developed",
+                "label": "Developed"
+              },
+              {
+                "value": "implemented",
+                "label": "Implemented"
+              }
+            ]
+          }
+        },
+        {
+          "name": "related",
+          "label": "Related",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "ai_involvement",
+          "label": "AI-Involvement",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "human",
+                "label": "human"
+              },
+              {
+                "value": "partly_ai",
+                "label": "partly_ai"
+              },
+              {
+                "value": "ai_written",
+                "label": "ai_written"
+              }
+            ]
+          }
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "tag",
+            "hidden": false
+          }
+        },
+        {
+          "name": "summary",
+          "label": "Summary",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        }
+      ],
+      "version": "1"
     }
   ]
 }

@@ -1,2 +1,20 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Obsidian device-specific
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+.obsidian/plugins/obsidian-hover-editor/state.json
+.obsidian/cache/
+.obsidian/plugins/obsidian-excalidraw-plugin/data.json
+
+# Trash & temp
+.obsidian/trash/
+.trash/
+~$*
+
+# Node/python junk (falls mal drin)
+node_modules/
+__pycache__/
+*.pyc

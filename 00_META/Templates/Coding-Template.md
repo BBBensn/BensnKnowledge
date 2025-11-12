@@ -8,78 +8,125 @@ modified: "<% tp.file.last_modified_date('YYYY-MM-DD HH:mm') %>"
   tR += result.asFrontmatterString();
 -%>
 <% "---" %>
-
 # <% tp.file.title %>
 
-## Zielsetzung
+## Projektbeschreibung
 
-
+Kurze Zusammenfassung: Ziel, Funktionalität, Kontext (z. B. Teilprojekt, Modul, Tool oder Integration).
 
 ---
+
+## Zielsetzung / Scope
+
+Was soll das Projekt erreichen? (Featureumfang, Zielgruppe, Constraints, Abgrenzung zu anderen Modulen)
+
+---
+
 ## Architektur / Struktur
 
-
-
----
-## Technologien
-
-
-
----
-## Funktionslogik
-
-
-
----
-## To-Do / Weiterentwicklung
-
-
-
----
-## Dokumentation / Tutorials
-
-
-
----
-## Referenzen / Ressourcen
-
-
+- Module / Komponenten / Services
+    
+- Datenflüsse / API-Verbindungen
+    
+- Frameworks / Bibliotheken
+    
+- Schnittstellen zu externen Tools
+    
 
 ---
 
-## Zielsetzung
+## Technologien / Stack
 
-
-
----
-## Architektur / Struktur
-
-
-
----
-## Technologien
-
-
+|Kategorie|Technologie / Version|Zweck / Kommentar|
+|---|---|---|
+|Backend|||
+|Frontend|||
+|Datenbank|||
+|Tools / CI|||
 
 ---
-## Funktionslogik
 
+## Setup / Installation
 
-
----
-## To-Do / Weiterentwicklung
-
-
-
----
-## Dokumentation / Tutorials
-
-
+1. Voraussetzungen (Node-Version, Python, Docker etc.)
+    
+2. Installation / Build-Schritte
+    
+3. Konfigurationsdateien (.env, Configs)
+    
+4. Start / Run Commands
+    
 
 ---
-## Referenzen / Ressourcen
 
-Siehe auch: <% result.get("related") %>
-Repo - Link:  <% result.get("repo") %>
+## Code-Struktur / Files
+
+Kurze Übersicht wichtiger Ordner, Dateien oder Entry Points:
+
+```
+/project-root
+├── src/
+│   ├── components/
+│   ├── routes/
+│   ├── utils/
+│   └── main.js
+├── public/
+├── package.json
+└── README.md
+```
 
 ---
+
+## API / Datenfluss
+
+Falls relevant:
+
+- Endpoints, Input/Output, Auth, Beispielrequests
+    
+- Datenstrukturen (z. B. JSON-Response)
+    
+
+---
+
+## Tests / Debugging
+
+- Unit-/Integrationstests
+    
+- Teststrategie / Tools
+    
+- Logging / Fehlerbehandlung
+    
+
+---
+
+## Bekannte Probleme / Bugs
+
+-  Offene Issues / Todos
+    
+-  Temporäre Workarounds
+    
+
+---
+
+## Weiterentwicklung / Ideen
+
+-  Geplante Features
+    
+-  Technische Schulden
+    
+-  Refactoring-Punkte
+    
+
+---
+
+## Referenzen / Links
+
+- Repos, Branches, Dokumentationen, externe Ressourcen
+    
+
+---
+
+## Siehe auch
+
+Siehe auch: <% result.get("related") %>  
+Repo - Link: <% result.get("repo") %>

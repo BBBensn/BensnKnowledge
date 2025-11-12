@@ -2,5 +2,8 @@
   "showIndentGuide": false,
   "showUnsupportedFiles": true,
   "promptDelete": false,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "95_Attachments",
+  "newLinkFormat": "relative"
 }

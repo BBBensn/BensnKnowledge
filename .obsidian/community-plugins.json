@@ -4,5 +4,12 @@
   "calendar",
   "editing-toolbar",
   "templater-obsidian",
-  "modalforms"
+  "modalforms",
+  "periodic-notes",
+  "quickadd",
+  "tag-wrangler",
+  "obsidian-style-settings",
+  "media-extended",
+  "obsidian-excalidraw-plugin",
+  "project-browser"
 ]

@@ -1,5 +1,5 @@
 {
-  "command_timeout": 5,
+  "command_timeout": 15,
   "templates_folder": "00_META/Templates",
   "templates_pairs": [
     [
@@ -7,7 +7,7 @@
       ""
     ]
   ],
-  "trigger_on_file_creation": false,
+  "trigger_on_file_creation": true,
   "auto_jump_to_cursor": false,
   "enable_system_commands": true,
   "shell_path": "",
