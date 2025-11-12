@@ -103,4 +103,6 @@ Beide Ergebnisse zusammen liefern eine belastbare Aussage über den physischen Z
 
 ---
 
-> **Verwandte Dokumente:** [[HDD_Checks_Recherche]] · [[HDD_Checks_Skript1_hdd_health]]
+> **Verwandte Dokumente:** 
+> [[../../../04_Research/Applied/HDD Checks Recherche|HDD Checks Recherche]] 
+> [[hdd_health.sh — SMART-Analyse]]

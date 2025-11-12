@@ -133,9 +133,9 @@ gnome-disks → Benchmark
 
 ## Prüfstrategie (empfohlene Reihenfolge)
 
-1. [[HDD_Checks_Skript1_hdd_health]] → SMART & Fehlerlog
+1. [[../../../07_Resources/Cheatsheets/HDD Check/hdd_health.sh — SMART-Analyse|hdd_health.sh — SMART-Analyse]] → SMART & Fehlerlog
     
-2. [[HDD_Checks_Skript2_hdd_surface_bench]] → Vollscan & Benchmark-Kurve
+2. [[../../../07_Resources/Cheatsheets/HDD Check/hdd_surface_bench.sh – Read-Only Oberflächenscan & Benchmark|hdd_surface_bench.sh – Read-Only Oberflächenscan & Benchmark]] → Vollscan & Benchmark-Kurve
     
 3. Sicht-/Hörkontrolle (Temperatur, Geräusche)
     

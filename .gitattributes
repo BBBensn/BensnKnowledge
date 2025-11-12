@@ -1,0 +1,19 @@
+# Einheitliche Zeilenenden (LF) für Text
+* text=auto eol=lf
+
+# Binärdateien niemals normalisieren
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.exe binary
+
+# Markdown/Docs sicher als Text behandeln
+*.md  text eol=lf
+*.canvas text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.csv text eol=lf

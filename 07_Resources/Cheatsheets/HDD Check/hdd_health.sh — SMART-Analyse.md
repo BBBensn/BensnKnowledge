@@ -90,10 +90,10 @@ sudo ./hdd_health.sh /dev/sdb --strict --self-test short
 
 ## Hinweise
 
-- Kombinierbar mit [[HDD_Checks_Skript2_hdd_surface_bench]] für vollständige Diagnose.
+- Kombinierbar mit [[hdd_surface_bench.sh – Read-Only Oberflächenscan & Benchmark]] für vollständige Diagnose.
     
 - Läuft schnell, kann regelmäßig (z. B. via Cron) ausgeführt werden.
     
 - JSON-Output ideal für NAS-Monitoring oder Log-Parser.
     
-- Ergänzende Hintergrundinfos siehe [[HDD_Checks_Recherche]].
+- Ergänzende Hintergrundinfos siehe [[../../../04_Research/Applied/HDD Checks Recherche|HDD Checks Recherche]].
