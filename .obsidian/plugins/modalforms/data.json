@@ -1153,7 +1153,7 @@
           "description": "",
           "isRequired": false,
           "input": {
-            "type": "text",
+            "type": "textarea",
             "hidden": false
           }
         },
@@ -1969,7 +1969,7 @@
           "description": "",
           "isRequired": false,
           "input": {
-            "type": "text",
+            "type": "textarea",
             "hidden": false
           }
         },
@@ -2024,6 +2024,152 @@
           "isRequired": false,
           "input": {
             "type": "textarea",
+            "hidden": false
+          }
+        }
+      ],
+      "version": "1"
+    },
+    {
+      "title": "Shopping List",
+      "name": "Shopping-Form",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "category",
+          "label": "Category",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "pc",
+                "label": "PC"
+              },
+              {
+                "value": "Tech",
+                "label": "tech"
+              },
+              {
+                "value": "fashion",
+                "label": "Fashion"
+              },
+              {
+                "value": "Home",
+                "label": "home"
+              },
+              {
+                "value": "Books",
+                "label": "books"
+              }
+            ]
+          }
+        },
+        {
+          "name": "notes",
+          "label": "Notes",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "textarea",
+            "hidden": false
+          }
+        },
+        {
+          "name": "sources",
+          "label": "Sources",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "textarea",
+            "hidden": false
+          }
+        },
+        {
+          "name": "related",
+          "label": "Related",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "tag",
+            "hidden": false
+          }
+        }
+      ],
+      "version": "1"
+    },
+    {
+      "title": "Catalog List",
+      "name": "Catalog-Form",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "notes",
+          "label": "Notes",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "textarea",
+            "hidden": false
+          }
+        },
+        {
+          "name": "sources",
+          "label": "Sources",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "textarea",
+            "hidden": false
+          }
+        },
+        {
+          "name": "related",
+          "label": "Related",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "tag",
             "hidden": false
           }
         }
