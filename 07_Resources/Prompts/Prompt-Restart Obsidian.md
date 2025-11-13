@@ -1,3 +1,8 @@
+---
+date created: 2025-11-12 07:07:02
+date modified: 2025-11-13 09:45:20
+---
+
 schau mein gedanke ist dieser:
 
 für die planung, konzeptionierung, und ausarbeitung von coding projekten hab ich ja das coding template.
