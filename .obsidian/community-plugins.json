@@ -12,5 +12,6 @@
   "media-extended",
   "obsidian-excalidraw-plugin",
   "project-browser",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-linter"
 ]

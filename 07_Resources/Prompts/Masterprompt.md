@@ -1,3 +1,7 @@
+---
+date created: Saturday, November 1st 2025, 11:56:09 am
+date modified: Thursday, November 13th 2025, 6:27:17 am
+---
 ZIEL:
 Erstelle oder erweitere eine Obsidian-kompatible Markdown-Notiz auf Basis eines bestehenden Templates 
 (z. B. "Research / Knowledge Exploration", "Coding / Project Documentation" oder "Tutorial / How-To").
