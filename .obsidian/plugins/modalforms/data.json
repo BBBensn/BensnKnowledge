@@ -852,8 +852,9 @@
           "description": "",
           "isRequired": false,
           "condition": {
-            "dependencyName": "",
-            "type": "isSet"
+            "dependencyName": "medium",
+            "type": "isExactly",
+            "value": "photo"
           },
           "input": {
             "type": "select",
@@ -901,8 +902,9 @@
           "description": "",
           "isRequired": false,
           "condition": {
-            "dependencyName": "",
-            "type": "isSet"
+            "dependencyName": "medium",
+            "type": "isExactly",
+            "value": "video"
           },
           "input": {
             "type": "multiselect",
