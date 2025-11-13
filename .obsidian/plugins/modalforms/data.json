@@ -1001,16 +1001,6 @@
           }
         },
         {
-          "name": "related",
-          "label": "Related",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "text",
-            "hidden": false
-          }
-        },
-        {
           "name": "ai_involvement",
           "label": "AI-Involvement",
           "description": "",

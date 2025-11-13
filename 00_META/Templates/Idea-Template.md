@@ -35,7 +35,6 @@ Was müsstest du als Nächstes tun, wenn du die Idee weiterverfolgen willst? Opt
     
 - Schritt 2
     
-
 ## Links & Referenzen
 
 ### Interne Links

@@ -6,6 +6,8 @@ tR += result.asFrontmatterString();
 -%>
 obsidian_type: project
 obsidian_form: Project-Form
+related:
+- 
 ---
 # <% tp.file.title %>
 
@@ -188,7 +190,13 @@ Konkrete, umsetzbare ToDos, die sich direkt aus dem aktuellen Projektstatus erge
 
 ### Interne Links
 
+```dataview
+LIST from outgoing([[]])
+```
+
 ### Externe Links
+
+- 
 
 ## Weitere Notizen
 
