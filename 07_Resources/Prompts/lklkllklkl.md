@@ -11,7 +11,7 @@ obsidian_form: Idea-Form
 related:
   -
 date created: 2025-11-13 22:34:20
-date modified: 2025-11-13 22:44:48
+date modified: 2025-11-13 22:51:42
 ---
 
 # lklkllklkl
@@ -52,17 +52,22 @@ LIST from outgoing([[]])
 ### Externe Links
 
 ```dataviewjs
-const file = dv.current().file;
+const page = dv.current();
+const cache = app.metadataCache.getFileCache(page.file);
 
-// Alle ausgehenden Links dieser Notiz, die mit http/https beginnen
-const external = file.outlinks
-  .filter(l => l.path.startsWith("http://") || l.path.startsWith("https://"));
+// alle Links dieser Notiz
+const allLinks = cache?.links ?? [];
+
+// nur http/https-Links filtern
+const external = allLinks.filter(l =>
+    l.link.startsWith("http://") || l.link.startsWith("https://")
+);
 
 if (external.length === 0) {
-  dv.paragraph("*(keine externen Links in dieser Notiz)*");
+    dv.paragraph("*(keine externen Links in dieser Notiz)*");
 } else {
-  // Ausgabe als einfache Liste
-  dv.list(external.map(l => l.path));
+    // als einfache Liste ausgeben
+    dv.list(external.map(l => l.link));
 }
 ```
 
