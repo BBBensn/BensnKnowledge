@@ -6,6 +6,8 @@ tR += result.asFrontmatterString();
 -%>  
 obsidian_type: shopping  
 obsidian_form: Shopping-Form
+related:
+-
 ---
 # <% tp.file.title %>
 
@@ -30,7 +32,13 @@ Was muss für den Kauf noch geklärt oder vorbereitet werden?
 
 ### Interne Links
 
+```dataview
+LIST from outgoing([[]])
+```
+
 ### Externe Links
+
+- 
 
 ## Weitere Notizen
 

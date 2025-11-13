@@ -6,6 +6,8 @@ tR += result.asFrontmatterString();
 -%>  
 obsidian_type: moodboard_log  
 obsidian_form: Moodboard-Form
+related:
+-
 ---
 # <% tp.file.title %>
 
@@ -51,7 +53,13 @@ Was möchtest du als Nächstes tun? Materialien sammeln, Styles vergleichen, Pro
 
 ### Interne Links
 
+```dataview
+LIST from outgoing([[]])
+```
+
 ### Externe Links
+
+- 
 
 ## Weitere Notizen
 

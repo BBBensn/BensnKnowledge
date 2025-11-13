@@ -6,6 +6,8 @@ tR += result.asFrontmatterString();
 -%>  
 obsidian_type: todo  
 obsidian_form: ToDo-Form
+related:
+-
 ---
 # <% tp.file.title %>
 
@@ -41,7 +43,13 @@ Optional: Weiterführende Aufgaben, Folgearbeiten oder nächste sinnvolle Schrit
 
 ### Interne Links
 
+```dataview
+LIST from outgoing([[]])
+```
+
 ### Externe Links
+
+- 
 
 ## Weitere Notizen
 

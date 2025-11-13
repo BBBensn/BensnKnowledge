@@ -6,6 +6,8 @@ tR += result.asFrontmatterString();
 -%>  
 obsidian_type: tutorial  
 obsidian_form: Tutorial-Form
+related:
+-
 ---
 # <% tp.file.title %>
 
@@ -38,7 +40,13 @@ Optionale Fortsetzung: Wie kann man dieses Tutorial erweitern, vertiefen oder pr
 
 ### Interne Links
 
+```dataview
+LIST from outgoing([[]])
+```
+
 ### Externe Links
+
+- 
 
 ## Weitere Notizen
 

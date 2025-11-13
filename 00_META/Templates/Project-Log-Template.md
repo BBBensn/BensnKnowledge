@@ -6,6 +6,8 @@ tR += result.asFrontmatterString();
 -%>  
 obsidian_type: project_log  
 obsidian_form: Project-Log-Form
+related:
+-
 ---
 # <% tp.file.title %>
 
@@ -53,7 +55,13 @@ Was sind die nächsten ToDos, Entscheidungen oder Arbeitsschritte?
 
 ### Interne Links
 
+```dataview
+LIST from outgoing([[]])
+```
+
 ### Externe Links
+
+- 
 
 ## Weitere Notizen
 

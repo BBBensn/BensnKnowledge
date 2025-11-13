@@ -6,6 +6,8 @@ tR += result.asFrontmatterString();
 -%>  
 obsidian_type: daily_log  
 obsidian_form: Daily-Log-Form
+related:
+-
 ---
 # <% tp.file.title %>
 
@@ -47,7 +49,13 @@ Was möchtest du morgen oder in den nächsten Tagen tun oder verbessern?
 
 ### Interne Links
 
+```dataview
+LIST from outgoing([[]])
+```
+
 ### Externe Links
+
+- 
 
 ## Weitere Notizen
 

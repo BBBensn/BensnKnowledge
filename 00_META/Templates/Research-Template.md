@@ -6,6 +6,8 @@ tR += result.asFrontmatterString();
 -%>  
 obsidian_type: research  
 obsidian_form: Research-Form
+related:
+-
 ---
 # <% tp.file.title %>
 
@@ -42,7 +44,13 @@ Konkrete Optionen oder ToDos, um die Recherche weiterzuführen oder praktisch um
 
 ### Interne Links
 
+```dataview
+LIST from outgoing([[]])
+```
+
 ### Externe Links
+
+- 
 
 ## Weitere Notizen
 

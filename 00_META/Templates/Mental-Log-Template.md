@@ -6,6 +6,8 @@ tR += result.asFrontmatterString();
 -%>  
 obsidian_type: mental_log  
 obsidian_form: Mental-Log-Form
+related:
+-
 ---
 # <% tp.file.title %>
 
@@ -42,7 +44,13 @@ Wie möchtest du mit diesen Erkenntnissen weiterarbeiten? Konkrete Schritte, Mö
 
 ### Interne Links
 
+```dataview
+LIST from outgoing([[]])
+```
+
 ### Externe Links
+
+- 
 
 ## Weitere Notizen
 
