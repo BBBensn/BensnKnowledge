@@ -1,13 +1,16 @@
 ---
-<%*
-const modalForm = app.plugins.plugins.modalforms.api;
-const result = await modalForm.openForm("Note-Form");
-tR += result.asFrontmatterString();
--%>
+topic: bejb
+context: coding
+related: kjbj
+ai_involvement: human
+summary: |
+  ndfgdg,.dgf
 obsidian_type: note
 obsidian_form: Note-Form
+date created: 2025-11-13 08:33:49
+date modified: 2025-11-13 08:34:25
 ---
-# <% tp.file.title %>
+# note-template-TEST
 
 ## Übersicht
 
