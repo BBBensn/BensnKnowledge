@@ -8,8 +8,9 @@ summary: |
 obsidian_type: note
 obsidian_form: Note-Form
 date created: 2025-11-13 08:33:49
-date modified: 2025-11-13 08:34:25
+date modified: 2025-11-13 08:49:27
 ---
+
 # note-template-TEST
 
 ## Übersicht
