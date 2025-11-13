@@ -9,9 +9,10 @@ obsidian_form: Note-Form
 ---
 # <% tp.file.title %>
 
+
 ## Übersicht
 
-Kurze Einordnung der Notiz. Optional kannst du hier in 1–3 Sätzen festhalten, worum es geht und warum die Notiz relevant ist.
+Kurze Zusammenfassung. Worum geht es, was ist der Kern und warum ist es relevant?
 
 ## Notizen
 
@@ -32,4 +33,4 @@ Freitextbereich für die eigentlichen Inhalte der Notiz: Gedanken, Stichpunkte, 
 
 ## Weitere Notizen
 
-Zusätzliche Gedanken, offene Fragen oder Ideen, die nicht direkt in die Hauptnotiz passen.
+Zusätzliche Gedanken, offene Fragen oder Aspekte, die nicht in die Hauptstruktur passen.

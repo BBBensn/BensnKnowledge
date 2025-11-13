@@ -12,7 +12,7 @@ obsidian_form: Project-Form
 
 ## Übersicht
 
-Kurze Beschreibung des Projekts: Worum geht es, was ist das Ziel, in welchem groben Rahmen bewegt sich das Ganze?
+Kurze Zusammenfassung. Worum geht es, was ist der Kern und warum ist es relevant?
 
 ## Ziele & Scope
 
@@ -38,28 +38,40 @@ Hier kannst du das Projekt grob in Phasen, Module oder Meilensteine aufteilen.
 
 ### Allgemein
 
-Freitext für projekttyp-unabhängige Details (Kontext, Rahmenbedingungen, beteiligte Personen, Abhängigkeiten, Risiken etc.).
+Freitext für projekttyp-unabhängige Details (Kontext, Rahmenbedingungen, Beteiligte, Abhängigkeiten, Risiken etc.).
 
+<%* if(tp.frontmatter.project_type == "coding") { %>
 ---
 
 ### Coding-Projekte
 
 Nutze diesen Abschnitt, wenn `project_type = coding` ist.
 
-- Techstack (siehe Frontmatter `techstack`)
+#### Anforderungen & Kontext
+
+- Problemstellung / Use-Case
     
-- Repository: `repo`
+- Zielgruppe / Anwender
     
-- Architektur / Module
-    
-- offene technische Fragen
+- Wichtige Rahmenbedingungen
     
 
-```md
-- Modul A
-- Modul B
-- Modul C
-```
+#### Architektur & Module
+
+- Grobe Architektur (Client/Server, Services, Datenfluss)
+    
+- Wichtige Module / Komponenten
+    
+- Schnittstellen zu anderen Systemen
+    
+
+#### Implementierung & offene Fragen
+
+- Technische Entscheidungen, die du getroffen hast (z. B. Frameworks, Libraries)
+    
+- Offene Fragen, Risiken, Dinge, die du noch klären musst
+
+<%* } %>	
 
 ---
 
@@ -67,25 +79,37 @@ Nutze diesen Abschnitt, wenn `project_type = coding` ist.
 
 Nutze diesen Abschnitt, wenn `project_type = music` ist.
 
-- Genre / Stimmung
+#### Konzept & Referenzen
+
+- Stimmung / Mood
     
-- Tempo / BPM
-    
-- Instrumente / Layer (siehe `instruments`)
+- Genre / Stil
     
 - Referenzsongs (`reference_songs`)
     
-- Songstruktur (Intro, Verse, Hook, Bridge, Outro)
+
+#### Struktur & Arrangement
+
+- Grobe Songstruktur (Intro, Strophe, Refrain, Bridge, Outro)
+    
+- Variation / Dynamik zwischen den Teilen
     
 
-```md
-- Struktur-Idee:
-  - Intro
-  - Strophe
-  - Refrain
-  - Bridge
-  - Outro
-```
+#### Lyrics & Vocals
+
+- Textideen, Fragmente, Themen
+    
+- Art der Vocals (gesprochen, gesungen, Shouts, Chöre)
+    
+
+#### Sound Design & Mix
+
+- Wichtige Instrumente / Layer (`instruments`)
+    
+- Klangästhetik (clean, dreckig, lo-fi, polished)
+    
+- Besondere Effekte oder Räume
+    
 
 ---
 
@@ -93,15 +117,29 @@ Nutze diesen Abschnitt, wenn `project_type = music` ist.
 
 Nutze diesen Abschnitt, wenn `project_type = fashion` ist.
 
-- Piece (siehe `piece`)
+#### Designkonzept
+
+- Piece-Typ (`piece`)
     
-- Materialien (`materials`)
-    
-- Techniken (`techniques`)
+- Grundidee / Statement
     
 - Farbpalette (`color_palette`)
     
-- Schnitte / Skizzen / Besonderheiten
+
+#### Materialien & Verarbeitung
+
+- Stoffe / Materialien (`materials`)
+    
+- Techniken (`techniques`)
+    
+- Besondere Details (Nähte, Applikationen, Verschlüsse)
+    
+
+#### Schnitt & Passform
+
+- Silhouette (weit, slim, cropped, oversized)
+    
+- Technische Skizzen / Schnittideen (optional per Link/Bild)
     
 
 ---
@@ -110,32 +148,39 @@ Nutze diesen Abschnitt, wenn `project_type = fashion` ist.
 
 Nutze diesen Abschnitt, wenn `project_type = creative` ist.
 
+#### Konzept & Story
+
+- zentrale Idee / Narrativ
+    
+- Ziel / Wirkung (Mood, Message)
+    
+
+#### Visueller Stil
+
+- Referenzen, Moodboards
+    
+- Stilentscheidungen (Farben, Kontraste, Körnung, Licht)
+    
+
+#### Technische Spezifikationen
+
 - Medium (`medium` / `mixed_media`)
     
 - Bild-/Videoformate (Aspect Ratio, Orientierung)
     
-- FPS / Outputformate
-    
-- Look & Feel / Stilreferenzen
+- FPS / Auflösung / Ausgabeformate
     
 
-```md
-- Medium:
-- Aspect Ratio:
-- FPS:
-- Output:
-```
+#### Ausgabe & Distribution
+
+- geplante Plattformen (z. B. Social, Print, Portfolio)
+    
+- besondere Exportanforderungen
+    
 
 ## Nächste Schritte
 
 Konkrete, umsetzbare ToDos, die sich direkt aus dem aktuellen Projektstatus ergeben.
-
--  Schritt 1
-    
--  Schritt 2
-    
--  Schritt 3
-    
 
 ## Links & Referenzen
 
@@ -145,4 +190,4 @@ Konkrete, umsetzbare ToDos, die sich direkt aus dem aktuellen Projektstatus erge
 
 ## Weitere Notizen
 
-Alles, was sonst noch wichtig ist: Ideen, Risiken, Learnings, offene Fragen, spätere Erweiterungen.
+Zusätzliche Gedanken, offene Fragen oder Aspekte, die nicht in die Hauptstruktur passen.

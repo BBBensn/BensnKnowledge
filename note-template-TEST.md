@@ -1,21 +1,24 @@
 ---
-topic: bejb
-context: coding
-related: kjbj
+topic: ljhv
+context: music
+related: jlhb
 ai_involvement: human
-summary: |
-  ndfgdg,.dgf
+tags:
+  - how-to
+  - ld
+summary: ldknfsdf
 obsidian_type: note
 obsidian_form: Note-Form
-date created: 2025-11-13 08:33:49
-date modified: 2025-11-13 08:49:27
+date created: 2025-11-13 04:44:06
+date modified: 2025-11-13 04:53:35
 ---
 
-# note-template-TEST
+# note-Template-TEST
+
 
 ## Übersicht
 
-Kurze Einordnung der Notiz. Optional kannst du hier in 1–3 Sätzen festhalten, worum es geht und warum die Notiz relevant ist.
+Kurze Zusammenfassung. Worum geht es, was ist der Kern und warum ist es relevant?
 
 ## Notizen
 
@@ -36,4 +39,4 @@ Freitextbereich für die eigentlichen Inhalte der Notiz: Gedanken, Stichpunkte, 
 
 ## Weitere Notizen
 
-Zusätzliche Gedanken, offene Fragen oder Ideen, die nicht direkt in die Hauptnotiz passen.
+Zusätzliche Gedanken, offene Fragen oder Aspekte, die nicht in die Hauptstruktur passen.

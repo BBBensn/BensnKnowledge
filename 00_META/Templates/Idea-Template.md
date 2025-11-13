@@ -9,9 +9,10 @@ obsidian_form: Idea-Form
 ---
 # <% tp.file.title %>
 
+
 ## Übersicht
 
-Kurze Beschreibung der Idee. Worum geht es? Was ist der Kern? Warum ist die Idee relevant oder interessant?
+Kurze Zusammenfassung. Worum geht es, was ist der Kern und warum ist es relevant?
 
 ## Idee
 
@@ -41,4 +42,4 @@ Was müsstest du als Nächstes tun, wenn du die Idee weiterverfolgen willst? Opt
 
 ## Weitere Notizen
 
-Zusätzliche Gedanken, alternative Ansätze oder Ergänzungen, die nicht in die Hauptidee passen.
+Zusätzliche Gedanken, offene Fragen oder Aspekte, die nicht in die Hauptstruktur passen.
