@@ -2109,20 +2109,20 @@
                 "label": "PC"
               },
               {
-                "value": "Tech",
-                "label": "tech"
+                "value": "tech",
+                "label": "Tech"
               },
               {
                 "value": "fashion",
                 "label": "Fashion"
               },
               {
-                "value": "Home",
-                "label": "home"
+                "value": "home",
+                "label": "Home"
               },
               {
-                "value": "Books",
-                "label": "books"
+                "value": "books",
+                "label": "Books"
               }
             ]
           }
