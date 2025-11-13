@@ -386,121 +386,6 @@
       "version": "1"
     },
     {
-      "title": "Research",
-      "name": "Research-Form",
-      "fields": [
-        {
-          "name": "topic",
-          "label": "Topic",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "text",
-            "hidden": false
-          }
-        },
-        {
-          "name": "question",
-          "label": "Research Question",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "text",
-            "hidden": false
-          }
-        },
-        {
-          "name": "status",
-          "label": "Status",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "select",
-            "source": "fixed",
-            "options": [
-              {
-                "value": "Idea",
-                "label": "idea"
-              },
-              {
-                "value": "Ongoing",
-                "label": "ongoing"
-              },
-              {
-                "value": "Done",
-                "label": "done"
-              }
-            ]
-          }
-        },
-        {
-          "name": "related",
-          "label": "Related",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "text",
-            "hidden": false
-          }
-        },
-        {
-          "name": "ai_involvement",
-          "label": "AI-Involvement",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "select",
-            "source": "fixed",
-            "options": [
-              {
-                "value": "Manual",
-                "label": "manual"
-              },
-              {
-                "value": "Partly AI",
-                "label": "partly_ai"
-              },
-              {
-                "value": "AI Written",
-                "label": "ai_written"
-              }
-            ]
-          }
-        },
-        {
-          "name": "tags",
-          "label": "Tags",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "tag",
-            "hidden": false
-          }
-        },
-        {
-          "name": "aliases",
-          "label": "Aliases",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "text",
-            "hidden": false
-          }
-        },
-        {
-          "name": "summary",
-          "label": "Summary",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "text",
-            "hidden": false
-          }
-        }
-      ],
-      "version": "1"
-    },
-    {
       "title": "Tutorial",
       "name": "Tutorial-Form",
       "fields": [
@@ -1066,11 +951,6 @@
           "label": "Title",
           "description": "",
           "isRequired": false,
-          "condition": {
-            "dependencyName": "project_type",
-            "type": "isExactly",
-            "value": "research"
-          },
           "input": {
             "type": "text",
             "hidden": false
@@ -1238,8 +1118,9 @@
           "description": "",
           "isRequired": false,
           "condition": {
-            "dependencyName": "",
-            "type": "isSet"
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "fashion"
           },
           "input": {
             "type": "multiselect",
@@ -1321,6 +1202,47 @@
             "value": "creative"
           },
           "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "photo",
+                "label": "Photo"
+              },
+              {
+                "value": "video",
+                "label": "Video"
+              },
+              {
+                "value": "animation",
+                "label": "Animation"
+              },
+              {
+                "value": "3d_model",
+                "label": "3D-Model"
+              },
+              {
+                "value": "illustration",
+                "label": "Illustration"
+              },
+              {
+                "value": "mixed",
+                "label": "Mixed (specify)"
+              }
+            ]
+          }
+        },
+        {
+          "name": "mixed_media",
+          "label": "Media used",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "medium",
+            "type": "isExactly",
+            "value": "mixed"
+          },
+          "input": {
             "type": "multiselect",
             "source": "fixed",
             "multi_select_options": [
@@ -1328,7 +1250,8 @@
               "Video",
               "Animation",
               "Illustration",
-              "3D-Model"
+              "3D-Model",
+              "Text"
             ],
             "allowUnknownValues": true
           }
@@ -1338,17 +1261,263 @@
           "label": "Aspect Ratio",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "medium",
+            "type": "isExactly",
+            "value": "photo"
+          },
           "input": {
             "type": "multiselect",
             "source": "fixed",
             "multi_select_options": [
               "1:1",
               "16:9",
-              "9:16",
-              "4:3",
-              "3:4"
+              "4:3"
             ],
             "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "Orientation",
+          "label": "orientation",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "",
+            "type": "isSet"
+          },
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "portrait",
+                "label": "Portrait"
+              },
+              {
+                "value": "landscape",
+                "label": "Landscape"
+              },
+              {
+                "value": "mixed",
+                "label": "Mixed"
+              }
+            ]
+          }
+        },
+        {
+          "name": "aspect_ratio_video",
+          "label": "Aspect Ratio",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "medium",
+            "type": "isExactly",
+            "value": "video"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "16:9",
+              "16:10",
+              "4:3"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "fps_video",
+          "label": "FPS",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "",
+            "type": "isSet"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "25",
+              "30",
+              "50",
+              "60",
+              "120",
+              "270",
+              "mixed"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "aspect_ratio_animation",
+          "label": "Aspect Ratio",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "medium",
+            "type": "isExactly",
+            "value": "animation"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "16:9",
+              "16:10",
+              "4:3"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "fps_animation",
+          "label": "FPS",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "medium",
+            "type": "isExactly",
+            "value": "animation"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "25",
+              "30",
+              "50",
+              "60",
+              "120",
+              "270",
+              "mixed"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "illustration_medium",
+          "label": "Medium",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "medium",
+            "type": "isExactly",
+            "value": "illustration"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Vector",
+              "Digital Drawing",
+              "mixed"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "status",
+          "label": "Status",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "draft",
+                "label": "Draft"
+              },
+              {
+                "value": "planned",
+                "label": "Planned"
+              },
+              {
+                "value": "active",
+                "label": "Active"
+              },
+              {
+                "value": "paused",
+                "label": "Paused"
+              },
+              {
+                "value": "done",
+                "label": "Done"
+              }
+            ]
+          }
+        },
+        {
+          "name": "related",
+          "label": "Related",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "ai_involvement",
+          "label": "AI-Involvement",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "manual",
+                "label": "Manual"
+              },
+              {
+                "value": "partly_ai",
+                "label": "Partly AI"
+              },
+              {
+                "value": "ai_written",
+                "label": "AI Written"
+              }
+            ]
+          }
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "tag",
+            "hidden": false
+          }
+        },
+        {
+          "name": "summary",
+          "label": "Summary",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        }
+      ],
+      "version": "1"
+    },
+    {
+      "title": "Research",
+      "name": "Research-Form",
+      "fields": [
+        {
+          "name": "topic",
+          "label": "Topic",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
           }
         },
         {
@@ -1356,14 +1525,49 @@
           "label": "Question",
           "description": "",
           "isRequired": false,
-          "condition": {
-            "dependencyName": "project_type",
-            "type": "isExactly",
-            "value": "research"
-          },
           "input": {
             "type": "text",
             "hidden": false
+          }
+        },
+        {
+          "name": "context",
+          "label": "Context",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "coding",
+                "label": "Coding"
+              },
+              {
+                "value": "music",
+                "label": "Music"
+              },
+              {
+                "value": "fashion",
+                "label": "Fashion"
+              },
+              {
+                "value": "creative",
+                "label": "Creative"
+              },
+              {
+                "value": "research",
+                "label": "Research"
+              },
+              {
+                "value": "work",
+                "label": "Work"
+              },
+              {
+                "value": "personal",
+                "label": "Personal"
+              }
+            ]
           }
         },
         {
@@ -1406,20 +1610,12 @@
             "source": "fixed",
             "options": [
               {
-                "value": "draft",
-                "label": "Draft"
+                "value": "idea",
+                "label": "Idea"
               },
               {
-                "value": "planned",
-                "label": "Planned"
-              },
-              {
-                "value": "active",
-                "label": "Active"
-              },
-              {
-                "value": "paused",
-                "label": "Paused"
+                "value": "ongoing",
+                "label": "Ongoing"
               },
               {
                 "value": "done",
