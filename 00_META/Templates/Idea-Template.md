@@ -46,10 +46,7 @@ LIST from outgoing([[]])
 
 ### Externe Links
 
-```dataview
-LIST FROM this.file.outlinks
-WHERE startswith(url, "http")
-```
+- 
 
 ## Weitere Notizen
 

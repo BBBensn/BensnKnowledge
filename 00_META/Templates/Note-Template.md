@@ -31,7 +31,13 @@ Freitextbereich für die eigentlichen Inhalte der Notiz: Gedanken, Stichpunkte, 
 
 ### Interne Links
 
+```dataview
+LIST from outgoing([[]])
+```
+
 ### Externe Links
+
+- 
 
 ## Weitere Notizen
 

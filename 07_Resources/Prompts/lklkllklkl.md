@@ -11,7 +11,7 @@ obsidian_form: Idea-Form
 related:
   -
 date created: 2025-11-13 22:34:20
-date modified: 2025-11-13 22:51:42
+date modified: 2025-11-13 23:10:38
 ---
 
 # lklkllklkl
@@ -37,7 +37,7 @@ Hier kommt die eigentliche Idee hin: Ausformulierung, Gedanken, Varianten, erste
 Was müsstest du als Nächstes tun, wenn du die Idee weiterverfolgen willst? Optionen, mögliche ToDos, erste Tasks.
 
 - Schritt 1
-    
+    [[../../08_Lists/Catalogs/Files to make|Files to make]]
 - Schritt 2
     https://chatgpt.com/g/g-p-6907653d6ed0819182d2c51851b41d9f/c/6915832f-3aec-832a-ab27-2709f55fbacc
 
@@ -51,25 +51,7 @@ LIST from outgoing([[]])
 
 ### Externe Links
 
-```dataviewjs
-const page = dv.current();
-const cache = app.metadataCache.getFileCache(page.file);
-
-// alle Links dieser Notiz
-const allLinks = cache?.links ?? [];
-
-// nur http/https-Links filtern
-const external = allLinks.filter(l =>
-    l.link.startsWith("http://") || l.link.startsWith("https://")
-);
-
-if (external.length === 0) {
-    dv.paragraph("*(keine externen Links in dieser Notiz)*");
-} else {
-    // als einfache Liste ausgeben
-    dv.list(external.map(l => l.link));
-}
-```
+- www.chatpgt.com
 
 ## Weitere Notizen
 
