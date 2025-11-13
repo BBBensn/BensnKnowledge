@@ -1364,16 +1364,6 @@
           }
         },
         {
-          "name": "aliases",
-          "label": "Aliases",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "text",
-            "hidden": false
-          }
-        },
-        {
           "name": "summary",
           "label": "Summary",
           "description": "",
@@ -2170,6 +2160,111 @@
           "isRequired": false,
           "input": {
             "type": "tag",
+            "hidden": false
+          }
+        }
+      ],
+      "version": "1"
+    },
+    {
+      "title": "Prompt",
+      "name": "Prompt-Form",
+      "fields": [
+        {
+          "name": "topic",
+          "label": "Topic",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "target_model",
+          "label": "Target Model",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "chat_gpt",
+                "label": "Chat-GPT"
+              },
+              {
+                "value": "gemini",
+                "label": "Gemini"
+              },
+              {
+                "value": "claude",
+                "label": "Claude"
+              }
+            ]
+          }
+        },
+        {
+          "name": "purpose",
+          "label": "Purpose",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "related",
+          "label": "Related",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "ai_involvement",
+          "label": "AI-Involvement",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "human",
+                "label": "human"
+              },
+              {
+                "value": "partly_ai",
+                "label": "partly_ai"
+              },
+              {
+                "value": "ai_written",
+                "label": "ai_written"
+              }
+            ]
+          }
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "tag",
+            "hidden": false
+          }
+        },
+        {
+          "name": "summary",
+          "label": "Summary",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "textarea",
             "hidden": false
           }
         }
