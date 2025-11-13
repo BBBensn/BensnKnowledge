@@ -40,14 +40,14 @@ Hier kannst du das Projekt grob in Phasen, Module oder Meilensteine aufteilen.
 
 Freitext für projekttyp-unabhängige Details (Kontext, Rahmenbedingungen, Beteiligte, Abhängigkeiten, Risiken etc.).
 
-<%* if(tp.frontmatter.project_type == "coding") { %>
+---
 ---
 
-### Coding-Projekte
+# Coding-Projekte
 
 Nutze diesen Abschnitt, wenn `project_type = coding` ist.
 
-#### Anforderungen & Kontext
+## Anforderungen & Kontext
 
 - Problemstellung / Use-Case
     
@@ -56,7 +56,7 @@ Nutze diesen Abschnitt, wenn `project_type = coding` ist.
 - Wichtige Rahmenbedingungen
     
 
-#### Architektur & Module
+## Architektur & Module
 
 - Grobe Architektur (Client/Server, Services, Datenfluss)
     
@@ -65,21 +65,21 @@ Nutze diesen Abschnitt, wenn `project_type = coding` ist.
 - Schnittstellen zu anderen Systemen
     
 
-#### Implementierung & offene Fragen
+## Implementierung & offene Fragen
 
 - Technische Entscheidungen, die du getroffen hast (z. B. Frameworks, Libraries)
     
 - Offene Fragen, Risiken, Dinge, die du noch klären musst
-
-<%* } %>	
+    
 
 ---
+---
 
-### Musik-Projekte
+# Musik-Projekte
 
 Nutze diesen Abschnitt, wenn `project_type = music` ist.
 
-#### Konzept & Referenzen
+## Konzept & Referenzen
 
 - Stimmung / Mood
     
@@ -88,21 +88,21 @@ Nutze diesen Abschnitt, wenn `project_type = music` ist.
 - Referenzsongs (`reference_songs`)
     
 
-#### Struktur & Arrangement
+## Struktur & Arrangement
 
 - Grobe Songstruktur (Intro, Strophe, Refrain, Bridge, Outro)
     
 - Variation / Dynamik zwischen den Teilen
     
 
-#### Lyrics & Vocals
+## Lyrics & Vocals
 
 - Textideen, Fragmente, Themen
     
 - Art der Vocals (gesprochen, gesungen, Shouts, Chöre)
     
 
-#### Sound Design & Mix
+## Sound Design & Mix
 
 - Wichtige Instrumente / Layer (`instruments`)
     
@@ -112,12 +112,13 @@ Nutze diesen Abschnitt, wenn `project_type = music` ist.
     
 
 ---
+---
 
-### Fashion-Projekte
+# Fashion-Projekte
 
 Nutze diesen Abschnitt, wenn `project_type = fashion` ist.
 
-#### Designkonzept
+## Designkonzept
 
 - Piece-Typ (`piece`)
     
@@ -126,7 +127,7 @@ Nutze diesen Abschnitt, wenn `project_type = fashion` ist.
 - Farbpalette (`color_palette`)
     
 
-#### Materialien & Verarbeitung
+## Materialien & Verarbeitung
 
 - Stoffe / Materialien (`materials`)
     
@@ -135,7 +136,7 @@ Nutze diesen Abschnitt, wenn `project_type = fashion` ist.
 - Besondere Details (Nähte, Applikationen, Verschlüsse)
     
 
-#### Schnitt & Passform
+## Schnitt & Passform
 
 - Silhouette (weit, slim, cropped, oversized)
     
@@ -143,26 +144,27 @@ Nutze diesen Abschnitt, wenn `project_type = fashion` ist.
     
 
 ---
+---
 
-### Creative / Foto / Video / Animation / Illustration
+# Creative / Foto / Video / Animation / Illustration
 
 Nutze diesen Abschnitt, wenn `project_type = creative` ist.
 
-#### Konzept & Story
+## Konzept & Story
 
 - zentrale Idee / Narrativ
     
 - Ziel / Wirkung (Mood, Message)
     
 
-#### Visueller Stil
+## Visueller Stil
 
 - Referenzen, Moodboards
     
 - Stilentscheidungen (Farben, Kontraste, Körnung, Licht)
     
 
-#### Technische Spezifikationen
+## Technische Spezifikationen
 
 - Medium (`medium` / `mixed_media`)
     
@@ -171,7 +173,7 @@ Nutze diesen Abschnitt, wenn `project_type = creative` ist.
 - FPS / Auflösung / Ausgabeformate
     
 
-#### Ausgabe & Distribution
+## Ausgabe & Distribution
 
 - geplante Plattformen (z. B. Social, Print, Portfolio)
     
