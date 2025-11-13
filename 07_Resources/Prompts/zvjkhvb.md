@@ -1,15 +1,19 @@
 ---
-<%*  
-const modalForm = app.plugins.plugins.modalforms.api;  
-const result = await modalForm.openForm("Idea-Form");  
-tR += result.asFrontmatterString();  
--%>  
-obsidian_type: idea  
+topic: dgwe
+context: coding
+status: concept
+ai_involvement: human
+tags:
+  - tutorial
+summary: egdfgd
+obsidian_type: idea
 obsidian_form: Idea-Form
 related:
-- 
+date created: 2025-11-13 22:21:53
+date modified: 2025-11-13 22:31:11
 ---
-# <% tp.file.title %>
+
+# zvjkhvb
 
 
 ## Übersicht
@@ -32,7 +36,8 @@ Hier kommt die eigentliche Idee hin: Ausformulierung, Gedanken, Varianten, erste
 Was müsstest du als Nächstes tun, wenn du die Idee weiterverfolgen willst? Optionen, mögliche ToDos, erste Tasks.
 
 - Schritt 1
-    
+	[[../../00_META/Templates/Idea-Template|Idea-Template]]  
+	[[../../00_META/Templates/Note-Template|Note-Template]]    
 - Schritt 2
     
 
@@ -45,11 +50,6 @@ LIST from outgoing([[]])
 ```
 
 ### Externe Links
-
-```dataview
-LIST FROM this.file.outlinks
-WHERE startswith(url, "http")
-```
 
 ## Weitere Notizen
 

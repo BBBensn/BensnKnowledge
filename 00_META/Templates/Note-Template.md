@@ -6,6 +6,8 @@ tR += result.asFrontmatterString();
 -%>
 obsidian_type: note
 obsidian_form: Note-Form
+related:
+- 
 ---
 # <% tp.file.title %>
 
