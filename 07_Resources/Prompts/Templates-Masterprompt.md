@@ -1,6 +1,6 @@
 ---
 date created: 2025-11-13 09:20:25
-date modified: 2025-11-13 09:45:09
+date modified: 2025-11-13 21:54:22
 topic: Obsidian Templates
 target_model: chat_gpt
 purpose: Masterprompt um einheitliche Obsidian Templates zu erstellen

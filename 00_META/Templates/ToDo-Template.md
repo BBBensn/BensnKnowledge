@@ -9,6 +9,7 @@ obsidian_form: ToDo-Form
 ---
 # <% tp.file.title %>
 
+
 ## Übersicht
 
 Kurze Zusammenfassung. Worum geht es, was ist der Kern und warum ist es relevant?

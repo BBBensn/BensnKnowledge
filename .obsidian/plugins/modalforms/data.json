@@ -2278,16 +2278,6 @@
           }
         },
         {
-          "name": "related",
-          "label": "Related",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "textarea",
-            "hidden": false
-          }
-        },
-        {
           "name": "ai_involvement",
           "label": "AI-Involvement",
           "description": "",

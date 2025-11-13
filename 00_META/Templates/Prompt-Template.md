@@ -6,8 +6,11 @@ tR += result.asFrontmatterString();
 -%>
 obsidian_type: prompt
 obsidian_form: Prompt-Form
+related:
+- 
 ---
 # <% tp.file.title %>
+
 
 ## Übersicht
 

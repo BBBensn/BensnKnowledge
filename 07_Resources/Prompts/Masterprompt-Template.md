@@ -1,24 +1,24 @@
 ---
-topic: Masterprompt für obsidian Templates
+topic: Obsdian Templates einheitlich erstelen
 target_model: chat_gpt
-purpose: mbjksb
+purpose: hh
 related: |-
-  [[Mental-Log-Theme]]
   [[Note-Template]]
   [[Project-Template]]
+  [[Prompt-Template]]
 ai_involvement: human
 tags:
   - obsidian
   - templates
-  - Masterprompt
   - chat-gpt
-summary: jf
+summary: dfgdg
 obsidian_type: prompt
 obsidian_form: Prompt-Form
-date created: 2025-11-13 09:45:29
-date modified: 2025-11-13 09:48:02
+date created: 2025-11-13 21:55:12
+date modified: 2025-11-13 21:57:11
 ---
-# Template-Masterprompt
+
+# Masterprompt-Template
 
 ## Übersicht
 
