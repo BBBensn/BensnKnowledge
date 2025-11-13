@@ -1,3 +1,9 @@
+---
+title: Untitled
+date created: 2025-11-13 06:11:00
+date modified: 2025-11-13 06:11:59
+---
+
 <% "---" %>
 
 title: "<% tp.file.title %>"
@@ -11,10 +17,6 @@ const result = await modalForm.openForm("example-form");
 tR += result.asFrontmatterString();
 
 -%>
-
-
-modified: "<% tp.file.last_modified_date('YYYY-MM-DD HH:mm') %>"
-
 <% "---" %>
 
 # <% tp.file.title %>

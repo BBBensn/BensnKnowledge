@@ -1,10 +1,12 @@
 ---
-title: "Dual Boot Setup – Windows 11 + Linux Mint auf Surface Laptop 3"
+title: Dual Boot Setup Surface
 date: 2025-11-02
 tags: [tutorial, how-to, ai, chat-gpt]
 aliases: []
 related:
   - [[KnowledgeVault]]
+date created: 2025-11-02 02:11:00
+date modified: 2025-11-13 06:11:10
 ---
 
 # Dual Boot Setup – Windows 11 + Linux Mint auf Surface Laptop 3
