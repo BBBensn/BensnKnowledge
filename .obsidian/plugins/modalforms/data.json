@@ -916,7 +916,7 @@
     },
     {
       "title": "Idea",
-      "name": "Note_Idea-Form",
+      "name": "Idea-Form",
       "fields": [
         {
           "name": "topic",
@@ -960,6 +960,10 @@
               {
                 "value": "work",
                 "label": "Work"
+              },
+              {
+                "value": "general",
+                "label": "General"
               }
             ]
           }
@@ -1026,6 +1030,434 @@
               {
                 "value": "ai_written",
                 "label": "ai_written"
+              }
+            ]
+          }
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "tag",
+            "hidden": false
+          }
+        },
+        {
+          "name": "summary",
+          "label": "Summary",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        }
+      ],
+      "version": "1"
+    },
+    {
+      "title": "Project",
+      "name": "Project-Form",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "research"
+          },
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "project_type",
+          "label": "Project Type",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "coding",
+                "label": "Coding"
+              },
+              {
+                "value": "music",
+                "label": "Music"
+              },
+              {
+                "value": "fashion",
+                "label": "Fashion"
+              },
+              {
+                "value": "creative",
+                "label": "Creative"
+              },
+              {
+                "value": "research",
+                "label": "Research"
+              },
+              {
+                "value": "work",
+                "label": "Work"
+              },
+              {
+                "value": "personal",
+                "label": "Personal"
+              }
+            ]
+          }
+        },
+        {
+          "name": "techstack",
+          "label": "Techstack",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "coding"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "python",
+              "javascript",
+              "react",
+              "vue",
+              "svelte",
+              "flask",
+              "fastapi",
+              "django",
+              "node",
+              "html/css"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "repo",
+          "label": "Repo",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "coding"
+          },
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "genre",
+          "label": "Genre",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "music"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Hip Hop",
+              "Rock"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "tempo",
+          "label": "Tempo",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "music"
+          },
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "instruments",
+          "label": "Instruments",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "music"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Guitar",
+              "Synth",
+              "Drums",
+              "Piano",
+              "Orchester"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "reference_songs",
+          "label": "Reference Songs",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "music"
+          },
+          "input": {
+            "type": "textarea",
+            "hidden": false
+          }
+        },
+        {
+          "name": "piece",
+          "label": "Piece",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "",
+            "type": "isSet"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "T-Shirt",
+              "Shirt",
+              "Hoodie",
+              "Sweater",
+              "Pants",
+              "Handbag"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "materials",
+          "label": "Materials",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "fashion"
+          },
+          "input": {
+            "type": "textarea",
+            "hidden": false
+          }
+        },
+        {
+          "name": "techniques",
+          "label": "Techniques",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "fashion"
+          },
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "Stitching",
+                "label": "Stitching"
+              },
+              {
+                "value": "laser_print",
+                "label": "Laser-Print"
+              }
+            ]
+          }
+        },
+        {
+          "name": "color_palette",
+          "label": "Color Palette",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "fashion"
+          },
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "medium",
+          "label": "Medium",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "creative"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Photo",
+              "Video",
+              "Animation",
+              "Illustration",
+              "3D-Model"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "aspect_ratio_photo",
+          "label": "Aspect Ratio",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "1:1",
+              "16:9",
+              "9:16",
+              "4:3",
+              "3:4"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "question",
+          "label": "Question",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "research"
+          },
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "methodology",
+          "label": "Methodology",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "theoretic_research",
+                "label": "Theoretic Research"
+              },
+              {
+                "value": "experiment",
+                "label": "Experiment"
+              }
+            ]
+          }
+        },
+        {
+          "name": "sources",
+          "label": "Sources",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "status",
+          "label": "Status",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "draft",
+                "label": "Draft"
+              },
+              {
+                "value": "planned",
+                "label": "Planned"
+              },
+              {
+                "value": "active",
+                "label": "Active"
+              },
+              {
+                "value": "paused",
+                "label": "Paused"
+              },
+              {
+                "value": "done",
+                "label": "Done"
+              }
+            ]
+          }
+        },
+        {
+          "name": "related",
+          "label": "Related",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "ai_involvement",
+          "label": "AI-Involvement",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "manual",
+                "label": "Manual"
+              },
+              {
+                "value": "partly_ai",
+                "label": "Partly AI"
+              },
+              {
+                "value": "ai_written",
+                "label": "AI Written"
               }
             ]
           }
