@@ -6,7 +6,7 @@ aliases: []
 related:
   - [[KnowledgeVault]]
 date created: 2025-11-02 02:11:00
-date modified: 2025-11-13 06:11:10
+date modified: 2025-11-13 07:39:49
 ---
 
 # Dual Boot Setup – Windows 11 + Linux Mint auf Surface Laptop 3
