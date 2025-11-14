@@ -12,7 +12,7 @@ obsidian_form: ToDo-Form
 related:
   - 
 date created: 2025-11-14 05:02:16
-date modified: 2025-11-14 16:08:45
+date modified: 2025-11-14 17:27:03
 ---
 
 # KnowledgeVault-ToDo
@@ -44,7 +44,8 @@ Hier kommen die eigentlichen Tasks hin.
 
 ### Forms & Templates to make
 
-- [ ] [[Therapy-Log-Template]] mit dazugehörigen Form erstellen (Datumsabfrage, Themen, In Person / Zoom)    
+- [ ] [[Therapy-Log-Template]] mit dazugehörigen Form erstellen (Datumsabfrage, Themen, In Person / Zoom)
+- [ ] Dataview Übersichtstemplate?
 
 
 ---

@@ -1677,11 +1677,7 @@
           },
           "input": {
             "type": "multiselect",
-            "min": 0,
-            "max": 100,
-            "hidden": false,
-            "allowUnknownValues": true,
-            "query": "",
+            "source": "fixed",
             "multi_select_options": [
               "happy",
               "sad",
@@ -1690,7 +1686,7 @@
               "lazy",
               "horny"
             ],
-            "source": "fixed"
+            "allowUnknownValues": true
           }
         },
         {
