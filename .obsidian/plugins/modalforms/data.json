@@ -2439,6 +2439,14 @@
               {
                 "value": "mac",
                 "label": "MAC"
+              },
+              {
+                "value": "global",
+                "label": "Global"
+              },
+              {
+                "value": "program",
+                "label": "Program"
               }
             ]
           }
