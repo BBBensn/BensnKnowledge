@@ -26,8 +26,10 @@ related:
   - "[[../../00_META/Templates/Tutorial-Template|Tutorial-Template]]"
   - "[[Note-Masterprompt]]"
   - "[[Obsidian-Restart-Prompt]]"
+  - "[[../../00_META/Templates/Codebin-Template|Codebin-Template]]"
+  - "[[../../00_META/Templates/Cheatsheet-Template|Cheatsheet-Template]]"
 date created: 2025-11-14 00:15:09
-date modified: 2025-11-14 04:40:17
+date modified: 2025-11-14 05:24:58
 ---
 
 # Templates-Masterprompt
