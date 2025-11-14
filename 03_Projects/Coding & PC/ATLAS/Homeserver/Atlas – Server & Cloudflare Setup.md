@@ -1,3 +1,7 @@
+---
+date created: 2025-11-01 08:58:43
+date modified: 2025-11-14 01:41:27
+---
 
 ## 1. Ziel und Kontext
 

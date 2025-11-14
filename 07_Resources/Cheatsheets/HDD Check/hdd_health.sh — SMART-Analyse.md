@@ -11,6 +11,8 @@
 Automatisierte Bewertung aller wichtigen SMART-Attribute.  
 Gibt einen klaren Gesamtstatus **OK / WARN / FAIL** und optional JSON-Output für spätere Automatisierung.
 
+date created: 2025-11-11 22:26:28
+date modified: 2025-11-14 01:44:18
 ---
 
 ## Verwendung

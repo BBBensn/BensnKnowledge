@@ -19,6 +19,8 @@ Kompletter Lese-Durchlauf über das Laufwerk, um:
 
 Keine Schreibzugriffe, keine Datengefährdung.
 
+date created: 2025-11-11 22:26:28
+date modified: 2025-11-14 01:47:08
 ---
 
 ## Verwendung

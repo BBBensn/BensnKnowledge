@@ -1550,17 +1550,6 @@
       "name": "Daily-Log-Form",
       "fields": [
         {
-          "name": "mood",
-          "label": "Mood",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "slider",
-            "min": 0,
-            "max": 10
-          }
-        },
-        {
           "name": "context",
           "label": "Context",
           "description": "",
@@ -1569,6 +1558,10 @@
             "type": "select",
             "source": "fixed",
             "options": [
+              {
+                "value": "personal",
+                "label": "Personal"
+              },
               {
                 "value": "coding",
                 "label": "Coding"
@@ -1594,14 +1587,78 @@
                 "label": "Work"
               },
               {
-                "value": "personal",
-                "label": "Personal"
-              },
-              {
                 "value": "general",
                 "label": "General"
               }
             ]
+          }
+        },
+        {
+          "name": "workshift",
+          "label": "Workshift",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "context",
+            "type": "isExactly",
+            "value": "personal"
+          },
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "weekend",
+                "label": "Weekend"
+              },
+              {
+                "value": "early_shift",
+                "label": "Early Shift"
+              },
+              {
+                "value": "late_shift",
+                "label": "Late Shift"
+              },
+              {
+                "value": "night_shift",
+                "label": "Night Shift"
+              },
+              {
+                "value": "vacation",
+                "label": "Vacation"
+              }
+            ]
+          }
+        },
+        {
+          "name": "got_up_at",
+          "label": "Got up at",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "context",
+            "type": "isExactly",
+            "value": "personal"
+          },
+          "input": {
+            "type": "time",
+            "hidden": false
+          }
+        },
+        {
+          "name": "mood",
+          "label": "Mood",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "context",
+            "type": "isExactly",
+            "value": "personal"
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 100
           }
         },
         {
