@@ -1,8 +1,6 @@
 ---
 topic: Linux Shortcuts
 environment: linux
-program:
-  - linux
 ai_involvement: partly_ai
 tags:
   - linux
@@ -13,7 +11,7 @@ obsidian_form: Cheatsheet-Form
 related:
   - "[[07_Resources/Cheatsheets/Linux-Terminalbefehle-Cheatsheet|Linux-Terminalbefehle-Cheatsheet]]"
 date created: 2025-11-14 03:28:16
-date modified: 2025-11-14 03:39:56
+date modified: 2025-11-14 04:18:41
 ---
 
 # Linux-Shortcuts-Cheatsheet

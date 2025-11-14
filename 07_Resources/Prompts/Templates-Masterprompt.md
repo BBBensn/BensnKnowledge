@@ -24,8 +24,10 @@ related:
   - "[[../../00_META/Templates/Shopping-Template|Shopping-Template]]"
   - "[[../../00_META/Templates/ToDo-Template|ToDo-Template]]"
   - "[[../../00_META/Templates/Tutorial-Template|Tutorial-Template]]"
+  - "[[Note-Masterprompt]]"
+  - "[[Obsidian-Restart-Prompt]]"
 date created: 2025-11-14 00:15:09
-date modified: 2025-11-14 00:55:49
+date modified: 2025-11-14 04:40:17
 ---
 
 # Templates-Masterprompt
