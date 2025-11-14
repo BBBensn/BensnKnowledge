@@ -25,7 +25,7 @@ Forms und Templates von [[BensnKnowledgeVault]] weiter ausbauen/anpassen/optimie
 
 ## Aufgaben
 
-- [ ] [[Therapy-Log-Template]] mit dazugehörigen Form erstellen (Datumsabfrage, Themen, In Person / Zoom)    
+- [ ] 
 
 ## Nächste Schritte
 

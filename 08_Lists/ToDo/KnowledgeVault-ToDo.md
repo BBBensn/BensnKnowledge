@@ -1,5 +1,5 @@
 ---
-task: referenzierte aber nicht existente Docs erstellen
+task: KnowledgeVault weiter asubauen und vervolllständigen
 context: coding
 priority: low
 deadline?: false
@@ -10,12 +10,12 @@ tags:
 obsidian_type: todo
 obsidian_form: ToDo-Form
 related:
-  -
+  - 
 date created: 2025-11-14 05:02:16
-date modified: 2025-11-14 05:09:24
+date modified: 2025-11-14 16:08:45
 ---
 
-# Files-to-make
+# KnowledgeVault-ToDo
 
 
 ## Übersicht
@@ -26,11 +26,13 @@ date modified: 2025-11-14 05:09:24
 
 Hier kommen die eigentlichen Tasks hin.
 
-
 ## Allgemein
 
-- [ ] [[BensnKnowledgeVault]]
+---
 
+### Files to make
+
+- [ ] [[BensnKnowledgeVault]]
 
 ## [[Dual Boot Setup Surface]]
 
@@ -38,16 +40,18 @@ Hier kommen die eigentlichen Tasks hin.
 - [ ] [[Windows – Clean Install und Wiederherstellungspunkte]]
     
 
-## Obsidian Templates
+    ---
 
-- [ ] [[Therapy-Log-Template]]   
-    
+### Forms & Templates to make
 
-    
+- [ ] [[Therapy-Log-Template]] mit dazugehörigen Form erstellen (Datumsabfrage, Themen, In Person / Zoom)    
+
+
+---
 
 ## Nächste Schritte
 
-Files nach und Nach erstellen um tote Links zu vermeiden.
+Punkte abarbeiten um Obsidian voll Einsatzfähig zu machen.
 
 ## Links & Referenzen
 
