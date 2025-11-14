@@ -1,3 +1,8 @@
+---
+date created: 2025-11-11 22:24:35
+date modified: 2025-11-14 02:49:25
+---
+
 # Linux Terminal – Starterkit & Cheatsheet (für Linux Mint / Ubuntu-Basis)
 
 **Ziel:** Kompakte, aber belastbare Referenz für deinen täglichen Terminal-Workflow inkl. „sicheren Defaults“, Erklärungen und Best-Practices – zugeschnitten auf **Linux Mint** (Ubuntu-Basis), aber mit Hinweisen für andere Distros.  

@@ -11,6 +11,8 @@ tags:
   - chat-gpt
   - ai
 title: Templater Überblick
+date created: 2025-11-11 22:26:28
+date modified: 2025-11-14 02:56:30
 ---
 
 # 🧩 Obsidian Templater -- Übersicht & Verwendung

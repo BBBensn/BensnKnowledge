@@ -11,6 +11,8 @@
 Zuverlässige Einschätzung des Zustands gebrauchter oder „refurbished“ Festplatten, insbesondere **Seagate Exos X22 (22 TB)**.  
 Fokus: Datenintegrität, Oberflächenfehler, Alter, Temperatur, Performance.
 
+date created: 2025-11-11 22:26:28
+date modified: 2025-11-14 02:29:04
 ---
 
 ## Relevante Prüfpunkte
