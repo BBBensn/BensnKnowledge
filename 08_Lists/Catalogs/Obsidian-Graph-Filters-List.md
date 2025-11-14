@@ -9,7 +9,7 @@ obsidian_form: Catalog-Form
 related:
   -
 date created: 2025-11-14 22:44:02
-date modified: 2025-11-14 22:50:59
+date modified: 2025-11-14 23:17:10
 ---
 
 # Obsidian-Graph-Filters
@@ -27,6 +27,8 @@ Sammlung aller einzelnen Parameter für die Obsidian-Graph Filter um die Filter 
 -path:"06_Logs/Daily" 
 -path:"07_Resources/Prompts" 
 -path:"08_Lists/ToDo/KnowledgeVault-ToDo"
+-path:"08_Lists/Catalogs"
+-path:"07_Resources/Codebin"
     
 
 ## Nächste Schritte
