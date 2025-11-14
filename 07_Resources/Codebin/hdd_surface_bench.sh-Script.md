@@ -11,7 +11,7 @@ summary: Script prüft komplette Festplattenoberfläche blockweise. Misst Lesege
 obsidian_type: codebin
 obsidian_form: Codebin-Form
 related:
-  - "[[../../04_Research/Applied/HDD Checks Recherche|HDD Checks Recherche]]"
+  - "[[../../04_Research/Applied/HDD-Checks-Recherche|HDD-Checks-Recherche]]"
   - "[[hdd_health.sh-Script]]"
 date created: 2025-11-14 02:34:27
 date modified: 2025-11-14 02:41:13
@@ -219,4 +219,4 @@ LIST from outgoing([[]])
     
 - Ideal für refurbished Enterprise-HDDs
     
-- Ergänzende theoretische Grundlagen siehe [[../../04_Research/Applied/HDD Checks Recherche|HDD Checks Recherche]] 
+- Ergänzende theoretische Grundlagen siehe [[../../04_Research/Applied/HDD-Checks-Recherche|HDD-Checks-Recherche]] 

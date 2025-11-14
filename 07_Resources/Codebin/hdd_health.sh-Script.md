@@ -11,10 +11,10 @@ summary: Bewertung aller SMART-Attribute. Gibt klaren Status OK/WARN/FAIL.
 obsidian_type: codebin
 obsidian_form: Codebin-Form
 related:
-  - "[[../../04_Research/Applied/HDD Checks Recherche|HDD Checks Recherche]]"
+  - "[[../../04_Research/Applied/HDD-Checks-Recherche|HDD-Checks-Recherche]]"
   - "[[hdd_surface_bench.sh-Script]]"
 date created: 2025-11-14 02:15:07
-date modified: 2025-11-14 02:44:33
+date modified: 2025-11-14 18:20:14
 ---
 
 # hdd_health.sh – SMART-Analyse & Gesundheitsbewertung
@@ -162,6 +162,6 @@ LIST from outgoing([[]])
     
 - Für Windows-Versionen kann `smartctl.exe` aus den gleichen Tools verwendet werden.
     
-- Ergänzende Analyse über [[../../04_Research/Applied/HDD Checks Recherche|HDD Checks Recherche]] empfohlen.
+- Ergänzende Analyse über [[../../04_Research/Applied/HDD-Checks-Recherche|HDD-Checks-Recherche]] empfohlen.
 
 - Kombination mit [[hdd_surface_bench.sh-Script]] für vollständige Diagnosekette.
