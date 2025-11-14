@@ -6,7 +6,7 @@
   "useSimpleList": false,
   "groupItemsInSameSlot": false,
   "firstDayOfWeek": 1,
-  "creationDateAttribute": "",
-  "modifiedDateAttribute": "",
+  "creationDateAttribute": "date created",
+  "modifiedDateAttribute": "date modified",
   "computeHeat": true
 }
