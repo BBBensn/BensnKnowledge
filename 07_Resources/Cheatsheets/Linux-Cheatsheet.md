@@ -1,15 +1,25 @@
 ---
-<%*  
-const modalForm = app.plugins.plugins.modalforms.api;  
-const result = await modalForm.openForm("Cheatsheet-Form");  
-tR += result.asFrontmatterString();  
--%>  
-obsidian_type: cheatsheet  
+topic: Shortcuts und Befehle für Linux
+environment: linux
+program:
+  - Linux
+ai_involvement: ai_written
+tags:
+  - linux
+  - shortcuts
+  - hotkeys
+  - commands
+  - terminal
+summary: Ein allgemeines Cheatsheet für die wichtigsten Befehle und Shortcuts für Linux.
+obsidian_type: cheatsheet
 obsidian_form: Cheatsheet-Form
 related:
--
+  -
+date created: 2025-11-14 03:14:43
+date modified: 2025-11-14 03:20:08
 ---
-# <% tp.file.title %>
+
+# Linux-Cheatsheet
 
 
 ## Übersicht

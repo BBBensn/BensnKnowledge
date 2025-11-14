@@ -2406,8 +2406,8 @@
       "version": "1"
     },
     {
-      "title": "Code Bin",
-      "name": "Codebin-Form-copy",
+      "title": "Cheatsheet",
+      "name": "Cheatsheet-Form",
       "fields": [
         {
           "name": "topic",
@@ -2417,29 +2417,6 @@
           "input": {
             "type": "text",
             "hidden": false
-          }
-        },
-        {
-          "name": "techstack",
-          "label": "Techstack",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "multiselect",
-            "source": "fixed",
-            "multi_select_options": [
-              "python",
-              "javascript",
-              "react",
-              "vue",
-              "svelte",
-              "flask",
-              "fastapi",
-              "django",
-              "node",
-              "html/css"
-            ],
-            "allowUnknownValues": true
           }
         },
         {
@@ -2467,39 +2444,19 @@
           }
         },
         {
-          "name": "category",
-          "label": "Category",
+          "name": "program",
+          "label": "Program",
           "description": "",
           "isRequired": false,
           "input": {
-            "type": "select",
+            "type": "multiselect",
             "source": "fixed",
-            "options": [
-              {
-                "value": "script",
-                "label": "Script"
-              },
-              {
-                "value": "snippet",
-                "label": "Snippet"
-              },
-              {
-                "value": "template",
-                "label": "Template"
-              },
-              {
-                "value": "config",
-                "label": "Config"
-              },
-              {
-                "value": "query",
-                "label": "Query"
-              },
-              {
-                "value": "api_call",
-                "label": "API-Call"
-              }
-            ]
+            "multi_select_options": [
+              "-",
+              "Obsidian",
+              "VS-Code"
+            ],
+            "allowUnknownValues": true
           }
         },
         {
