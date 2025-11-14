@@ -2097,16 +2097,6 @@
           }
         },
         {
-          "name": "related",
-          "label": "Related",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "text",
-            "hidden": false
-          }
-        },
-        {
           "name": "tags",
           "label": "Tags",
           "description": "",

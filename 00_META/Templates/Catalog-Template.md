@@ -6,6 +6,8 @@ tR += result.asFrontmatterString();
 -%>  
 obsidian_type: catalog  
 obsidian_form: Catalog-Form
+related:
+-
 ---
 # <% tp.file.title %>
 
@@ -43,7 +45,13 @@ Was muss als Nächstes getan werden?
 
 ### Interne Links
 
+```dataview
+LIST from outgoing([[]])
+```
+
 ### Externe Links
+
+- 
 
 ## Weitere Notizen
 

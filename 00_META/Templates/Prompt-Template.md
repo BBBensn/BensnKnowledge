@@ -44,7 +44,13 @@ Wie wird dieser Prompt weiterentwickelt, getestet oder angepasst?
 
 ### Interne Links
 
+```dataview
+LIST from outgoing([[]])
+```
+
 ### Externe Links
+
+- 
 
 ## Weitere Notizen
 
