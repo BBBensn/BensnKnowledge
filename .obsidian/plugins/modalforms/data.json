@@ -2447,6 +2447,10 @@
               {
                 "value": "program",
                 "label": "Program"
+              },
+              {
+                "value": "plugin",
+                "label": "Plugin"
               }
             ]
           }
