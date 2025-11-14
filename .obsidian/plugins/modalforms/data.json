@@ -2596,6 +2596,143 @@
         }
       ],
       "version": "1"
+    },
+    {
+      "title": "Idea",
+      "name": "Idea-Form-copy",
+      "fields": [
+        {
+          "name": "topic",
+          "label": "Topic",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "context",
+          "label": "Context",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "coding",
+                "label": "Coding"
+              },
+              {
+                "value": "music",
+                "label": "Music"
+              },
+              {
+                "value": "fashion",
+                "label": "Fashion"
+              },
+              {
+                "value": "creative",
+                "label": "Creative"
+              },
+              {
+                "value": "research",
+                "label": "Research"
+              },
+              {
+                "value": "work",
+                "label": "Work"
+              },
+              {
+                "value": "personal",
+                "label": "Personal"
+              },
+              {
+                "value": "general",
+                "label": "General"
+              }
+            ]
+          }
+        },
+        {
+          "name": "status",
+          "label": "Status",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "concept",
+                "label": "Concept"
+              },
+              {
+                "value": "draft",
+                "label": "Draft"
+              },
+              {
+                "value": "in_development",
+                "label": "In Development"
+              },
+              {
+                "value": "developed",
+                "label": "Developed"
+              },
+              {
+                "value": "implemented",
+                "label": "Implemented"
+              }
+            ]
+          }
+        },
+        {
+          "name": "ai_involvement",
+          "label": "AI-Involvement",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "human",
+                "label": "Human"
+              },
+              {
+                "value": "partly_ai",
+                "label": "Partly AI"
+              },
+              {
+                "value": "ai_written",
+                "label": "AI Written"
+              }
+            ]
+          }
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "tag",
+            "hidden": false
+          }
+        },
+        {
+          "name": "summary",
+          "label": "Summary",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "textarea",
+            "hidden": false
+          }
+        }
+      ],
+      "version": "1"
     }
   ]
 }
