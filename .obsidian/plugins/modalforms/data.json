@@ -2460,13 +2460,60 @@
           "label": "Program",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "environment",
+            "type": "isExactly",
+            "value": "program"
+          },
           "input": {
             "type": "multiselect",
             "source": "fixed",
             "multi_select_options": [
-              "-",
               "Obsidian",
-              "VS-Code"
+              "VS-Code",
+              "Zen",
+              "Affinity"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "program",
+          "label": "Program",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "environment",
+            "type": "isExactly",
+            "value": "plugin"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Obsidian",
+              "VS-Code",
+              "Zen",
+              "Affinity"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "plugin",
+          "label": "Plugin",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "environment",
+            "type": "isExactly",
+            "value": "plugin"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Templater"
             ],
             "allowUnknownValues": true
           }
