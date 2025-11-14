@@ -1,20 +1,12 @@
 {
   "collapse-filter": false,
-  "search": "Templates",
+  "search": "-path:\"00_META\"  -path:\"07_Resources/Cheatsheets\"  -path:\"06_Logs/Daily\"  -path:\"07_Resources/Prompts\"  -path:\"08_Lists/ToDo/KnowledgeVault-ToDo\"",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
-  "colorGroups": [
-    {
-      "query": "",
-      "color": {
-        "a": 1,
-        "rgb": 14701138
-      }
-    }
-  ],
+  "collapse-color-groups": true,
+  "colorGroups": [],
   "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0,
@@ -26,5 +18,5 @@
   "linkStrength": 1,
   "linkDistance": 250,
   "scale": 0.7132754626224358,
-  "close": true
+  "close": false
 }
