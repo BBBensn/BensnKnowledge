@@ -2260,6 +2260,562 @@
         }
       ],
       "version": "1"
+    },
+    {
+      "title": "Project",
+      "name": "Project-Form-copy",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "project_type",
+          "label": "Project Type",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "coding",
+                "label": "Coding"
+              },
+              {
+                "value": "music",
+                "label": "Music"
+              },
+              {
+                "value": "fashion",
+                "label": "Fashion"
+              },
+              {
+                "value": "creative",
+                "label": "Creative"
+              },
+              {
+                "value": "research",
+                "label": "Research"
+              },
+              {
+                "value": "work",
+                "label": "Work"
+              },
+              {
+                "value": "personal",
+                "label": "Personal"
+              }
+            ]
+          }
+        },
+        {
+          "name": "techstack",
+          "label": "Techstack",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "coding"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "python",
+              "javascript",
+              "react",
+              "vue",
+              "svelte",
+              "flask",
+              "fastapi",
+              "django",
+              "node",
+              "html/css"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "repo",
+          "label": "Repo",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "coding"
+          },
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "genre",
+          "label": "Genre",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "music"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Hip Hop",
+              "Rock"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "tempo",
+          "label": "Tempo",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "music"
+          },
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "instruments",
+          "label": "Instruments",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "music"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Guitar",
+              "Synth",
+              "Drums",
+              "Piano",
+              "Orchester"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "reference_songs",
+          "label": "Reference Songs",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "music"
+          },
+          "input": {
+            "type": "textarea",
+            "hidden": false
+          }
+        },
+        {
+          "name": "piece",
+          "label": "Piece",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "fashion"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "T-Shirt",
+              "Shirt",
+              "Hoodie",
+              "Sweater",
+              "Pants",
+              "Handbag"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "materials",
+          "label": "Materials",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "fashion"
+          },
+          "input": {
+            "type": "textarea",
+            "hidden": false
+          }
+        },
+        {
+          "name": "techniques",
+          "label": "Techniques",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "fashion"
+          },
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "Stitching",
+                "label": "Stitching"
+              },
+              {
+                "value": "laser_print",
+                "label": "Laser-Print"
+              }
+            ]
+          }
+        },
+        {
+          "name": "color_palette",
+          "label": "Color Palette",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "fashion"
+          },
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "medium",
+          "label": "Medium",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "project_type",
+            "type": "isExactly",
+            "value": "creative"
+          },
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "photo",
+                "label": "Photo"
+              },
+              {
+                "value": "video",
+                "label": "Video"
+              },
+              {
+                "value": "animation",
+                "label": "Animation"
+              },
+              {
+                "value": "3d_model",
+                "label": "3D-Model"
+              },
+              {
+                "value": "illustration",
+                "label": "Illustration"
+              },
+              {
+                "value": "mixed",
+                "label": "Mixed (specify)"
+              }
+            ]
+          }
+        },
+        {
+          "name": "mixed_media",
+          "label": "Media used",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "medium",
+            "type": "isExactly",
+            "value": "mixed"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Photo",
+              "Video",
+              "Animation",
+              "Illustration",
+              "3D-Model",
+              "Text"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "aspect_ratio_photo",
+          "label": "Aspect Ratio",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "medium",
+            "type": "isExactly",
+            "value": "photo"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "1:1",
+              "16:9",
+              "4:3"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "Orientation",
+          "label": "orientation",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "medium",
+            "type": "isExactly",
+            "value": "photo"
+          },
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "portrait",
+                "label": "Portrait"
+              },
+              {
+                "value": "landscape",
+                "label": "Landscape"
+              },
+              {
+                "value": "mixed",
+                "label": "Mixed"
+              }
+            ]
+          }
+        },
+        {
+          "name": "aspect_ratio_video",
+          "label": "Aspect Ratio",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "medium",
+            "type": "isExactly",
+            "value": "video"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "16:9",
+              "16:10",
+              "4:3"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "fps_video",
+          "label": "FPS",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "medium",
+            "type": "isExactly",
+            "value": "video"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "25",
+              "30",
+              "50",
+              "60",
+              "120",
+              "270",
+              "mixed"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "aspect_ratio_animation",
+          "label": "Aspect Ratio",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "medium",
+            "type": "isExactly",
+            "value": "animation"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "16:9",
+              "16:10",
+              "4:3"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "fps_animation",
+          "label": "FPS",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "medium",
+            "type": "isExactly",
+            "value": "animation"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "25",
+              "30",
+              "50",
+              "60",
+              "120",
+              "270",
+              "mixed"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "illustration_medium",
+          "label": "Medium",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "medium",
+            "type": "isExactly",
+            "value": "illustration"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Vector",
+              "Digital Drawing",
+              "mixed"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "status",
+          "label": "Status",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "draft",
+                "label": "Draft"
+              },
+              {
+                "value": "planned",
+                "label": "Planned"
+              },
+              {
+                "value": "active",
+                "label": "Active"
+              },
+              {
+                "value": "paused",
+                "label": "Paused"
+              },
+              {
+                "value": "done",
+                "label": "Done"
+              }
+            ]
+          }
+        },
+        {
+          "name": "ai_involvement",
+          "label": "AI-Involvement",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "human",
+                "label": "Human"
+              },
+              {
+                "value": "partly_ai",
+                "label": "Partly AI"
+              },
+              {
+                "value": "ai_written",
+                "label": "AI Written"
+              }
+            ]
+          }
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "tag",
+            "hidden": false
+          }
+        },
+        {
+          "name": "summary",
+          "label": "Summary",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "textarea",
+            "hidden": false
+          }
+        }
+      ],
+      "version": "1"
     }
   ]
 }
