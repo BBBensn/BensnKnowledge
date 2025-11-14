@@ -14,7 +14,7 @@ related:
   - "[[../../04_Research/Applied/HDD-Checks-Recherche|HDD-Checks-Recherche]]"
   - "[[hdd_health.sh-Script]]"
 date created: 2025-11-14 02:34:27
-date modified: 2025-11-14 02:41:13
+date modified: 2025-11-14 19:55:39
 ---
 
 # hdd_surface_bench.sh – Read-Only Oberflächenscan & Benchmark
@@ -187,11 +187,9 @@ sudo ./hdd_surface_bench.sh /dev/sdb --out ~/bench
 
 ## Nächste Schritte
 
-- Kombination mit [[hdd_health.sh-Script]] für vollständige Diagnosekette.
-    
-- Integration in Cronjobs für regelmäßige Oberflächenprüfungen.
-    
-- Automatische Trendanalyse der CSV-Daten.
+- [ ] Kombination mit [[hdd_health.sh-Script]] für vollständige Diagnosekette.
+- [ ] Integration in Cronjobs für regelmäßige Oberflächenprüfungen.
+- [ ] Automatische Trendanalyse der CSV-Daten.
     
 
 ---

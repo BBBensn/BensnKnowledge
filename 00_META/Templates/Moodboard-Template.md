@@ -49,6 +49,9 @@ Link zum visuellen Moodboard-Canvas:
 
 Was möchtest du als Nächstes tun? Materialien sammeln, Styles vergleichen, Prototypen erstellen?
 
+- [ ] Schritt 1
+- [ ] Schritt 2
+
 ## Links & Referenzen
 
 ### Interne Links

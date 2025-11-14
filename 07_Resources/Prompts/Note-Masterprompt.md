@@ -14,7 +14,7 @@ related:
   - "[[../../07_Resources/Prompts/Templates-Masterprompt|Templates-Masterprompt]]"
   - "[[Obsidian-Restart-Prompt]]"
 date created: 2025-11-14 04:27:04
-date modified: 2025-11-14 04:39:45
+date modified: 2025-11-14 19:55:12
 ---
 
 # Note-Masterprompt
@@ -68,11 +68,9 @@ Hinweise:
 
 ## Nächste Schritte
 
-- Erweiterung um weitere Template-Varianten.
-    
-- Ergänzung eines optionalen Debug-Modus zur Prüfung auf Strukturfehler.
-    
-- Test unterschiedlicher Notiztypen zur Validierung der Einheitlichkeit.
+- [ ] Erweiterung um weitere Template-Varianten.
+- [ ] Ergänzung eines optionalen Debug-Modus zur Prüfung auf Strukturfehler.
+- [ ] Test unterschiedlicher Notiztypen zur Validierung der Einheitlichkeit.
     
 
 ## Links & Referenzen

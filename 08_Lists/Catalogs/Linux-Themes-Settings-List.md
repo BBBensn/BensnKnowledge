@@ -10,7 +10,7 @@ obsidian_form: Catalog-Form
 related:
   -
 date created: 2025-11-14 05:09:53
-date modified: 2025-11-14 05:15:01
+date modified: 2025-11-14 19:53:37
 ---
 
 # Linux-Themes-Settings-List
@@ -32,6 +32,9 @@ Sammlung aller in Linux eingestellten Design-Parameter und Verwaltung eines Glob
 ## Nächste Schritte
 
 Sammlung und Organisation aller Werte. 
+
+- [ ] Schritt 1
+- [ ] Schritt 2
 
 ## Links & Referenzen
 

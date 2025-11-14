@@ -28,6 +28,9 @@ Kurze Zusammenfassung. Worum geht es, was ist der Kern und warum ist es relevant
 
 Was muss für den Kauf noch geklärt oder vorbereitet werden?
 
+- [ ] Schritt 1
+- [ ] Schritt 2
+
 ## Links & Referenzen
 
 ### Interne Links

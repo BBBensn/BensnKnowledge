@@ -31,9 +31,8 @@ Hier kommt die eigentliche Idee hin: Ausformulierung, Gedanken, Varianten, erste
 
 Was müsstest du als Nächstes tun, wenn du die Idee weiterverfolgen willst? Optionen, mögliche ToDos, erste Tasks.
 
-- Schritt 1
-    
-- Schritt 2
+- [ ] Schritt 1
+- [ ] Schritt 2
     
 ## Links & Referenzen
 

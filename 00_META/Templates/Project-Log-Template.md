@@ -46,9 +46,8 @@ Aktueller Zustand des Projekts (siehe Frontmatter `status`).
 
 Was sind die nächsten ToDos, Entscheidungen oder Arbeitsschritte?
 
-- Schritt 1
-    
-- Schritt 2
+- [ ] Schritt 1
+- [ ] Schritt 2
     
 
 ## Links & Referenzen

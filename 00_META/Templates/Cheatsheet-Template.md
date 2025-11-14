@@ -42,8 +42,8 @@ Kurzliste mit Dingen, die leicht schiefgehen, inkl. kurzer Hinweise zur Lösung.
 
 Was möchtest du als Nächstes mit diesem Cheatsheet tun? Ergänzungen, Umbau, Dinge, die du testen oder noch dokumentieren willst.
 
-- Schritt 1
-- Schritt 2
+- [ ] Schritt 1
+- [ ] Schritt 2
 
 ## Links & Referenzen
 

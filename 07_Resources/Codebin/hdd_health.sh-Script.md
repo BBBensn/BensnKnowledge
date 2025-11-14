@@ -14,7 +14,7 @@ related:
   - "[[../../04_Research/Applied/HDD-Checks-Recherche|HDD-Checks-Recherche]]"
   - "[[hdd_surface_bench.sh-Script]]"
 date created: 2025-11-14 02:15:07
-date modified: 2025-11-14 18:20:14
+date modified: 2025-11-14 19:56:01
 ---
 
 # hdd_health.sh – SMART-Analyse & Gesundheitsbewertung
@@ -132,11 +132,9 @@ sudo ./hdd_health.sh /dev/sdb --self-test=short
 
 ## Nächste Schritte
 
-- Integration in Cronjobs zur automatischen HDD-Überwachung.
-    
-- Verknüpfung der JSON-Ausgabe mit zentralem NAS-Monitoring.
-    
-- Erweiterung um Temperaturtrend-Analyse.
+- [ ] Integration in Cronjobs zur automatischen HDD-Überwachung.
+- [ ] Verknüpfung der JSON-Ausgabe mit zentralem NAS-Monitoring.
+- [ ] Erweiterung um Temperaturtrend-Analyse.
     
 
 

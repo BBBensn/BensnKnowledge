@@ -43,6 +43,9 @@ Optionale alternative Versionen, Parameter, Flags oder Anpassungen zu diesem Sni
 
 Was muss als Nächstes getan werden?
 
+- [ ] Schritt 1
+- [ ] Schritt 2
+
 ## Links & Referenzen
 
 ### Interne Links

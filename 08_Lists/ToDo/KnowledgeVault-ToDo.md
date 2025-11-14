@@ -12,7 +12,7 @@ obsidian_form: ToDo-Form
 related:
   - 
 date created: 2025-11-14 05:02:16
-date modified: 2025-11-14 17:27:03
+date modified: 2025-11-14 19:53:26
 ---
 
 # KnowledgeVault-ToDo
@@ -53,6 +53,9 @@ Hier kommen die eigentlichen Tasks hin.
 ## Nächste Schritte
 
 Punkte abarbeiten um Obsidian voll Einsatzfähig zu machen.
+
+- [ ] Schritt 1
+- [ ] Schritt 2
 
 ## Links & Referenzen
 

@@ -186,6 +186,9 @@ Nutze diesen Abschnitt, wenn `project_type = creative` ist.
 
 Konkrete, umsetzbare ToDos, die sich direkt aus dem aktuellen Projektstatus ergeben.
 
+- [ ] Schritt 1
+- [ ] Schritt 2
+
 ## Links & Referenzen
 
 ### Interne Links

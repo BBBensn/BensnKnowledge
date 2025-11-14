@@ -40,6 +40,9 @@ Punkte, die noch unklar sind oder weiter untersucht werden müssen.
 
 Konkrete Optionen oder ToDos, um die Recherche weiterzuführen oder praktisch umzusetzen.
 
+- [ ] Schritt 1
+- [ ] Schritt 2
+
 ## Links & Referenzen
 
 ### Interne Links

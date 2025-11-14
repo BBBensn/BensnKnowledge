@@ -40,6 +40,9 @@ Was hat geholfen? Was hat nicht geholfen? Welche Strategien möchtest du testen 
 
 Wie möchtest du mit diesen Erkenntnissen weiterarbeiten? Konkrete Schritte, Möglichkeiten oder Reflexionspunkte.
 
+- [ ] Schritt 1
+- [ ] Schritt 2
+
 ## Links & Referenzen
 
 ### Interne Links

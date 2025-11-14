@@ -14,7 +14,7 @@ obsidian_form: Cheatsheet-Form
 related:
   - "[[Linux-Shortcuts-Cheatsheet]]"
 date created: 2025-11-14 03:14:43
-date modified: 2025-11-14 04:18:35
+date modified: 2025-11-14 19:58:04
 ---
 
 # Linux-Terminalbefehle-Cheatsheet
@@ -101,11 +101,9 @@ Dieses Cheatsheet gilt für Systeme mit **bash/zsh-Shell** und Ubuntu-/Mint-basi
 
 ## Nächste Schritte
 
-- Integration mit [[Linux-Shortcuts-Cheatsheet]] vorbereiten.
-    
-- Ergänzung um Bash-Scripting-Grundlagen.
-    
-- Prüfen, ob Aliases automatisch aus .bashrc importiert werden sollen.
+- [ ] Integration mit [[Linux-Shortcuts-Cheatsheet]] vorbereiten.
+- [ ] Ergänzung um Bash-Scripting-Grundlagen.
+- [ ] Prüfen, ob Aliases automatisch aus .bashrc importiert werden sollen.
     
 
 ## Links & Referenzen

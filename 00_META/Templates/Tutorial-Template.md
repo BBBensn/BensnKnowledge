@@ -36,6 +36,9 @@ Beschreibung weiterer notwendiger Schritte.
 
 Optionale Fortsetzung: Wie kann man dieses Tutorial erweitern, vertiefen oder praktisch anwenden?
 
+- [ ] Schritt 1
+- [ ] Schritt 2
+
 ## Links & Referenzen
 
 ### Interne Links

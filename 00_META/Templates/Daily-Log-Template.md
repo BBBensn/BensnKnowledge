@@ -45,6 +45,9 @@ Welche Einsichten oder Reflexionen hast du heute gewonnen?
 
 Was möchtest du morgen oder in den nächsten Tagen tun oder verbessern?
 
+- [ ] Schritt 1
+- [ ] Schritt 2
+
 ## Links & Referenzen
 
 ### Interne Links

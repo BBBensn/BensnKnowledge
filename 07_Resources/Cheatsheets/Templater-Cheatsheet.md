@@ -16,7 +16,7 @@ obsidian_form: Cheatsheet-Form
 related:
   -
 date created: 2025-11-14 03:59:52
-date modified: 2025-11-14 04:15:51
+date modified: 2025-11-14 19:56:27
 ---
 
 # Templater-Cheatsheet
@@ -126,11 +126,9 @@ Aufruf:
 
 ## Nächste Schritte
 
-- Ergänzen eigener Patterns
-    
-- Aufbau einer eigenen Script-Bibliothek
-    
-- Überarbeitung persönlicher Templates
+- [ ] Ergänzen eigener Patterns
+- [ ] Aufbau einer eigenen Script-Bibliothek
+- [ ] Überarbeitung persönlicher Templates
     
 
 ## Links & Referenzen

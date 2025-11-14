@@ -13,7 +13,7 @@ related:
   - "[[Templates-Masterprompt]]"
   - "[[Note-Masterprompt]]"
 date created: 2025-11-14 04:32:54
-date modified: 2025-11-14 04:39:21
+date modified: 2025-11-14 19:54:36
 ---
 
 # Obsidian-Restart-Prompt
@@ -86,13 +86,10 @@ Der Prompt bildet die Grundlage für die komplette Reorganisation des Vaults. Al
 
 ## Nächste Schritte
 
-- Ableitung der finalen Ordnerstruktur.
-    
-- Definition aller benötigten Templates.
-    
-- Erstellung der zugehörigen Modal-Formulare.
-    
-- Schrittweise Umsetzung von Template zu Template im Canvas‑Workflow.
+- [ ] Ableitung der finalen Ordnerstruktur.
+- [ ] Definition aller benötigten Templates.
+- [ ] Erstellung der zugehörigen Modal-Formulare.
+- [ ] Schrittweise Umsetzung von Template zu Template im Canvas‑Workflow.
     
 
 ## Links & Referenzen

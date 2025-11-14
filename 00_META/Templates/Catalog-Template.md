@@ -39,7 +39,7 @@ Kurze Zusammenfassung. Worum geht es, was ist der Kern und warum ist es relevant
 
 ## Nächste Schritte
 
-Was muss als Nächstes getan werden?
+- [ ] Was muss als Nächstes getan werden?
 
 ## Links & Referenzen
 

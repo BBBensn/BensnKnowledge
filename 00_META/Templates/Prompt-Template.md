@@ -40,6 +40,9 @@ Relevante Rahmenbedingungen, EinschrÃ¤nkungen, Formatregeln, Beispiele oder zusÃ
 
 Wie wird dieser Prompt weiterentwickelt, getestet oder angepasst?
 
+- [ ] Schritt 1
+- [ ] Schritt 2
+
 ## Links & Referenzen
 
 ### Interne Links

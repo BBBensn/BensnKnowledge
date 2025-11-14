@@ -11,7 +11,7 @@ obsidian_form: Cheatsheet-Form
 related:
   - "[[07_Resources/Cheatsheets/Linux-Terminalbefehle-Cheatsheet|Linux-Terminalbefehle-Cheatsheet]]"
 date created: 2025-11-14 03:28:16
-date modified: 2025-11-14 04:18:41
+date modified: 2025-11-14 19:58:23
 ---
 
 # Linux-Shortcuts-Cheatsheet
@@ -105,11 +105,9 @@ Dieses Cheatsheet deckt ausschließlich **System-, Fenster- und Navigations-Shor
 
 ## Nächste Schritte
 
-- Eigene Custom-Shortcuts aus Cinnamon übernehmen und einpflegen.
-    
-- Erweiterung um **Terminal-Shortcuts** (eigenes Cheatsheet).
-    
-- Dokumentation spezieller Keybindings für **Ksnip / Flameshot / Spectacle**.
+- [ ] Eigene Custom-Shortcuts aus Cinnamon übernehmen und einpflegen.
+- [ ] Erweiterung um **Terminal-Shortcuts** (eigenes Cheatsheet).
+- [ ] Dokumentation spezieller Keybindings für **Ksnip / Flameshot / Spectacle**.
     
 
 ## Links & Referenzen

@@ -39,6 +39,9 @@ Hier kommen die eigentlichen Tasks hin.
 
 Optional: Weiterführende Aufgaben, Folgearbeiten oder nächste sinnvolle Schritte.
 
+- [ ] Schritt 1
+- [ ] Schritt 2
+
 ## Links & Referenzen
 
 ### Interne Links

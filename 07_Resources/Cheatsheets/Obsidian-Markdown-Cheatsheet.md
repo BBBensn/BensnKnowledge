@@ -12,7 +12,7 @@ obsidian_form: Cheatsheet-Form
 related:
   -
 date created: 2025-11-14 03:48:51
-date modified: 2025-11-14 04:18:15
+date modified: 2025-11-14 19:57:00
 ---
 
 # Obsidian-Markdown-Cheatsheet
@@ -188,9 +188,8 @@ b. Zweiter Punkt
 
 ## Nächste Schritte
 
-- Erweiterung um Dataview-Beispiele.
-    
-- Ergänzung um Templater-Shortcodes & Snippets.
+- [ ] Erweiterung um Dataview-Beispiele.
+- [ ] Ergänzung um Templater-Shortcodes & Snippets.
     
 
 ## Links & Referenzen
