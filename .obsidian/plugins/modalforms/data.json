@@ -1589,6 +1589,10 @@
               {
                 "value": "general",
                 "label": "General"
+              },
+              {
+                "value": "",
+                "label": ""
               }
             ]
           }
@@ -1659,6 +1663,34 @@
             "type": "slider",
             "min": 0,
             "max": 100
+          }
+        },
+        {
+          "name": "mood_tags",
+          "label": "Mood Tags",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "context",
+            "type": "isExactly",
+            "value": "personal"
+          },
+          "input": {
+            "type": "multiselect",
+            "min": 0,
+            "max": 100,
+            "hidden": false,
+            "allowUnknownValues": true,
+            "query": "",
+            "multi_select_options": [
+              "happy",
+              "sad",
+              "neutral",
+              "active",
+              "lazy",
+              "horny"
+            ],
+            "source": "fixed"
           }
         },
         {
