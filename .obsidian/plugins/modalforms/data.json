@@ -1559,36 +1559,36 @@
             "source": "fixed",
             "options": [
               {
-                "value": "personal",
-                "label": "Personal"
+                "value": "neutral",
+                "label": "Neutral"
               },
               {
-                "value": "coding",
-                "label": "Coding"
+                "value": "happy",
+                "label": "Happy"
               },
               {
-                "value": "music",
-                "label": "Music"
+                "value": "sad",
+                "label": "Sad"
               },
               {
-                "value": "fashion",
-                "label": "Fashion"
+                "value": "exhausted",
+                "label": "Exhausted"
               },
               {
-                "value": "creative",
-                "label": "Creative"
+                "value": "tired",
+                "label": "Tired"
               },
               {
-                "value": "research",
-                "label": "Research"
+                "value": "busy",
+                "label": "Busy"
               },
               {
-                "value": "work",
-                "label": "Work"
+                "value": "excited",
+                "label": "Excited"
               },
               {
-                "value": "general",
-                "label": "General"
+                "value": "horny",
+                "label": "Horny"
               }
             ]
           }
@@ -1737,6 +1737,35 @@
             "type": "slider",
             "min": 0,
             "max": 100
+          }
+        },
+        {
+          "name": "mood_tags",
+          "label": "Mood Tags",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "neutral",
+              "sad",
+              "happy",
+              "depressed",
+              "busy",
+              "excited",
+              "bored",
+              "stressed",
+              "tired",
+              "horny"
+            ],
+            "allowUnknownValues": true,
+            "query": ""
+          },
+          "condition": {
+            "dependencyName": "context",
+            "type": "isExactly",
+            "value": "personal"
           }
         },
         {
