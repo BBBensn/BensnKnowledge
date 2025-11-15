@@ -22,42 +22,70 @@ related:
 
 - Kategorie: <% tp.frontmatter.category %>
     
-- Titel / Werk / Produkt: <% tp.frontmatter.item %>
-    
-- Jahr / Release: <% tp.frontmatter.year %>
-    
-- Hersteller / Künstler / Autor: <% tp.frontmatter.creator %>
+- Thema / Werk: <% tp.frontmatter.topic %>
     
 
-### Bewertung
+### Bewertung (Album – Sliders)
 
 **Einzelbewertungen (1–10):**
 
-- Kategorie 1: <% tp.frontmatter.rating_1 %>/10
+- Songwriting: <% tp.frontmatter.songwriting_score %>/10
     
-- Kategorie 2: <% tp.frontmatter.rating_2 %>/10
+- Production: <% tp.frontmatter.production_score %>/10
     
-- Kategorie 3: <% tp.frontmatter.rating_3 %>/10
+- Lyrics: <% tp.frontmatter.lyrics_score %>/10
     
-- Kategorie 4 (optional): <% tp.frontmatter.rating_4 %>/10
+- Cohesion: <% tp.frontmatter.cohesion_score %>/10
+    
+- Relisten: <% tp.frontmatter.relisten_score %>/10
+    
+- Creativity: <% tp.frontmatter.creativity_score %>/10
     
 
-**Automatisch berechneter Gesamtscore:**
+**Automatisch berechneter Gesamtscore (Album, Vocal vs. Instrumental):**
 
 ```
-TABLE (rating_1 + rating_2 + rating_3 + rating_4) / 4 AS "Gesamtscore"
-FROM ""
-WHERE file.path = this.file.path
+const s = dv.current();
+
+// Kategorie prüfen, damit der Block in anderen Review-Kategorien keinen Unsinn macht
+const cat = String(s.category ?? "").toLowerCase();
+
+if (cat === "album") {
+    const sw = Number(s.songwriting_score ?? 0);
+    const pr = Number(s.production_score ?? 0);
+    const ly = Number(s.lyrics_score ?? 0);
+    const co = Number(s.cohesion_score ?? 0);
+    const rl = Number(s.relisten_score ?? 0);
+    const cr = Number(s.creativity_score ?? 0);
+
+    // Instrumental-Toggle – Feldname ggf. anpassen, wenn dein Frontmatter anders heißt
+    const instrRaw = String(s.instrumental ?? "").toLowerCase();
+    const isInstrumental = ["true", "yes", "1", "y"].includes(instrRaw);
+
+    let score;
+
+    if (isInstrumental) {
+        // Gewichtung für Instrumental-Alben
+        score = (sw * 0.35) +
+                (pr * 0.35) +
+                (co * 0.20) +
+                (rl * 0.10);
+    } else {
+        // Gewichtung für Vocal-Alben
+        score = (sw * 0.25) +
+                (pr * 0.25) +
+                (ly * 0.25) +
+                (co * 0.15) +
+                (rl * 0.10);
+    }
+
+    score = Math.round(score * 10) / 10;
+
+    dv.paragraph("**Overall Score (Album):** " + score);
+} else {
+    dv.paragraph("_Kein Score-Profil für Kategorie: " + (s.category ?? "–") + " definiert._");
+}
 ```
-
-### Details
-
-- Stärken:
-    
-- Schwächen:
-    
-- Bemerkenswerte Punkte:
-    
 
 ## Nächste Schritte
 
