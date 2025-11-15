@@ -2570,16 +2570,6 @@
       "name": "Review-Form",
       "fields": [
         {
-          "name": "topic",
-          "label": "Topic",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "text",
-            "hidden": false
-          }
-        },
-        {
           "name": "category",
           "label": "Category",
           "description": "",
@@ -2846,7 +2836,7 @@
             "value": "album"
           },
           "input": {
-            "type": "time",
+            "type": "number",
             "hidden": false
           }
         },
@@ -2855,6 +2845,11 @@
           "label": "Director",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "movie"
+          },
           "input": {
             "type": "multiselect",
             "source": "fixed",
@@ -2872,6 +2867,10 @@
           "label": "Title",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "",
+            "type": "isSet"
+          },
           "input": {
             "type": "text",
             "hidden": false
@@ -2882,6 +2881,11 @@
           "label": "Special Edition",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "movie"
+          },
           "input": {
             "type": "toggle",
             "hidden": false
@@ -2892,9 +2896,110 @@
           "label": "Edition",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "album_special_edition_toggle",
+            "type": "boolean",
+            "value": true
+          },
           "input": {
             "type": "text",
             "hidden": false
+          }
+        },
+        {
+          "name": "movie_story_score",
+          "label": "Story",
+          "description": "Dramaturgie, Struktur, Spannung, Narrative.",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "album_special_edition_toggle",
+            "type": "boolean",
+            "value": true
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "acting_score",
+          "label": "Acting",
+          "description": "Schauspiel, Casting, Chemie.",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "album_special_edition_toggle",
+            "type": "boolean",
+            "value": true
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "visuals_score",
+          "label": "Visuals",
+          "description": "Kameraarbeit, Stil, Bildästhetik, VFX.",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "album_special_edition_toggle",
+            "type": "boolean",
+            "value": true
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "editing_score",
+          "label": "Editing",
+          "description": "Schnitt, Pacing, Kontinuität.",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "album_special_edition_toggle",
+            "type": "boolean",
+            "value": true
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "soundtrack_score",
+          "label": "Soundtrack",
+          "description": "Score, Sounddesign, Einsatz von Musik.",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "album_special_edition_toggle",
+            "type": "boolean",
+            "value": true
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "direction_score",
+          "label": "Direction",
+          "description": "Regiehandschrift, Stil, Umsetzung der Vision.",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "movie"
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
           }
         },
         {
@@ -2902,6 +3007,11 @@
           "label": "Release Year",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "movie"
+          },
           "input": {
             "type": "number",
             "hidden": false
@@ -2912,6 +3022,11 @@
           "label": "Genre",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "movie"
+          },
           "input": {
             "type": "multiselect",
             "source": "fixed",
@@ -2929,6 +3044,11 @@
           "label": "Actors",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "movie"
+          },
           "input": {
             "type": "multiselect",
             "source": "fixed",
@@ -2945,8 +3065,13 @@
           "label": "Length",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "movie"
+          },
           "input": {
-            "type": "time",
+            "type": "number",
             "hidden": false
           }
         },
@@ -2955,6 +3080,11 @@
           "label": "Author",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "book"
+          },
           "input": {
             "type": "multiselect",
             "source": "fixed",
@@ -2970,6 +3100,11 @@
           "label": "Title",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "book"
+          },
           "input": {
             "type": "text",
             "hidden": false
@@ -2980,6 +3115,11 @@
           "label": "Special Edition",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "book"
+          },
           "input": {
             "type": "toggle",
             "hidden": false
@@ -2990,9 +3130,110 @@
           "label": "Title",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "book_special_edition_toggle",
+            "type": "boolean",
+            "value": true
+          },
           "input": {
             "type": "text",
             "hidden": false
+          }
+        },
+        {
+          "name": "writing_score",
+          "label": "Writing",
+          "description": "Stil, Satzbau, Ausdruck, literarische Qualität.",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "book_special_edition_toggle",
+            "type": "boolean",
+            "value": true
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "characters_score",
+          "label": "Characters",
+          "description": "Tiefe, Entwicklung, Glaubwürdigkeit.",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "book"
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "pacing_score",
+          "label": "Pacing",
+          "description": "Tempo, Struktur, Balance.",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "book"
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "themes_score",
+          "label": "Themes",
+          "description": "Ideen, Konzepte, philosophische/inhaltliche Tiefe.",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "book"
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "engagement_score",
+          "label": "Engagement",
+          "description": "Wie sehr hat es dich reingezogen, emotional oder intellektuell?",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "book"
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "readability_score",
+          "label": "Readability",
+          "description": "Wie leicht lesbar und Verständlich ist das Buch.",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "book"
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
           }
         },
         {
@@ -3000,6 +3241,11 @@
           "label": "Release Year",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "book"
+          },
           "input": {
             "type": "number",
             "hidden": false
@@ -3010,6 +3256,11 @@
           "label": "Genre",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "book"
+          },
           "input": {
             "type": "multiselect",
             "source": "fixed",
