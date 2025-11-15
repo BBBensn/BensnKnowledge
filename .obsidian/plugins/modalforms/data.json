@@ -2658,13 +2658,69 @@
           }
         },
         {
-          "name": "album_special_edition_title",
-          "label": "Title",
-          "description": "",
+          "name": "songwriting_score",
+          "label": "Songwriting",
+          "description": "Wie gut sind Melodien, Strukturen, musikalische Ideen?",
           "isRequired": false,
           "input": {
-            "type": "text",
-            "hidden": false
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "production_score",
+          "label": "Production",
+          "description": "Mixing, Mastering, Soundqualität, Dynamik.",
+          "isRequired": false,
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "lyrics_score",
+          "label": "Lyrics",
+          "description": "Textliche Qualität, Konzepte, Tiefgang.",
+          "isRequired": false,
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "cohesion_score",
+          "label": "Cohesion",
+          "description": "Wie gut funktioniert das Album als Ganzes? Übergänge, Flow, Konsistenz.",
+          "isRequired": false,
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "relisten_score",
+          "label": "Relisten",
+          "description": "Wiederhörbarkeit – wie oft würdest du zurückkehren?",
+          "isRequired": false,
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "creativity_score",
+          "label": "Creativity",
+          "description": "Out of the Box Faktor. Wie kreativ, wie musikalisch Anspruchsvoll ist das Album?",
+          "isRequired": false,
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
           }
         },
         {
