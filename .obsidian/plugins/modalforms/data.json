@@ -2614,8 +2614,7 @@
               "Kendrick Lamar",
               "Neutral Milk Hotel"
             ],
-            "allowUnknownValues": true,
-            "query": ""
+            "allowUnknownValues": true
           }
         },
         {
@@ -2659,7 +2658,7 @@
             "value": true
           },
           "input": {
-            "type": "toggle",
+            "type": "text",
             "hidden": false
           }
         },
@@ -2808,8 +2807,7 @@
               "EDM",
               "Pop"
             ],
-            "allowUnknownValues": true,
-            "query": ""
+            "allowUnknownValues": true
           }
         },
         {
@@ -2861,8 +2859,7 @@
               "Stanley Kubrick",
               "Martin Scorsese"
             ],
-            "allowUnknownValues": true,
-            "query": ""
+            "allowUnknownValues": true
           }
         },
         {
@@ -2901,7 +2898,7 @@
           "description": "",
           "isRequired": false,
           "condition": {
-            "dependencyName": "album_special_edition_toggle",
+            "dependencyName": "movie_special_edition_toggle",
             "type": "boolean",
             "value": true
           },
@@ -3040,8 +3037,7 @@
               "Documentation",
               "Comedy"
             ],
-            "allowUnknownValues": true,
-            "query": ""
+            "allowUnknownValues": true
           }
         },
         {
@@ -3062,8 +3058,7 @@
               "Jennifer Lawrence",
               "Robert De Niro"
             ],
-            "allowUnknownValues": true,
-            "query": ""
+            "allowUnknownValues": true
           }
         },
         {
@@ -3098,8 +3093,7 @@
               "Haruki Murakami",
               "Albert Camus"
             ],
-            "allowUnknownValues": true,
-            "query": ""
+            "allowUnknownValues": true
           }
         },
         {
@@ -3164,8 +3158,7 @@
               "Penguin",
               "Suhrkamp"
             ],
-            "allowUnknownValues": true,
-            "query": ""
+            "allowUnknownValues": true
           }
         },
         {
@@ -3302,8 +3295,7 @@
               "Biography",
               "Magical Realism"
             ],
-            "allowUnknownValues": true,
-            "query": ""
+            "allowUnknownValues": true
           }
         },
         {
@@ -3338,8 +3330,7 @@
               "Rockstar",
               "Valve"
             ],
-            "allowUnknownValues": true,
-            "query": ""
+            "allowUnknownValues": true
           }
         },
         {
@@ -3519,8 +3510,7 @@
               "Adventure ",
               "Action"
             ],
-            "allowUnknownValues": true,
-            "query": ""
+            "allowUnknownValues": true
           }
         },
         {
@@ -3565,6 +3555,51 @@
           "input": {
             "type": "textarea",
             "hidden": false
+          }
+        },
+        {
+          "name": "instrumental_toggle",
+          "label": "toggle_helper_movie",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "movie"
+          },
+          "input": {
+            "type": "toggle",
+            "hidden": true
+          }
+        },
+        {
+          "name": "instrumental_toggle",
+          "label": "toggle_helper_book",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "book"
+          },
+          "input": {
+            "type": "toggle",
+            "hidden": true
+          }
+        },
+        {
+          "name": "instrumental_toggle",
+          "label": "toggle_helper_game",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "game"
+          },
+          "input": {
+            "type": "toggle",
+            "hidden": true
           }
         }
       ],
