@@ -1,17 +1,37 @@
 ---
-<%*  
-const modalForm = app.plugins.plugins.modalforms.api;  
-const result = await modalForm.openForm("Review-Form");  
-tR += result.asFrontmatterString();  
--%>  
-obsidian_type: review  
+topic: "-"
+category: album
+artist:
+  - Neutral Milk Hotel
+album_title: In the Aeroplane Over the Sea
+album_special_edition_toggle: false
+album_special_edition_title: false
+instrumental_toggle: false
+songwriting_score: 10
+production_score: 10
+lyrics_score: 10
+cohesion_score: 10
+relisten_score: 10
+creativity_score: 10
+release_year: 1998
+music_genre:
+  - Rock
+  - Indie Rock
+tracks: 11
+album_length: 05:20
+movie_special_edition_toggle: false
+book_special_edition_toggle: false
+ai_involvement: human
+obsidian_type: review
 obsidian_form: Review-Form
 related:
--
+  -
+date created: 2025-11-15 16:15:04
+date modified: 2025-11-15 16:20:35
 ---
-# <% tp.file.title %>
 
-## `= this.artist` - `= this.album_title` | `= this.release_year`
+# review-test-3-album
+
 
 ## Übersicht
 
@@ -19,9 +39,11 @@ related:
 
 ## Hauptinhalt
 
-### Review
+### Basisinformationen
 
-Hier ist Platz für ein ausführliches Review.
+#### `= this.artist`
+#### `= this.album_title`
+#### `= this.release_year`
     
 
 ### Bewertung (Album – Sliders)
