@@ -3141,14 +3141,34 @@
           }
         },
         {
-          "name": "writing_score",
-          "label": "Writing",
-          "description": "Stil, Satzbau, Ausdruck, literarische Qualität.",
+          "name": "book_publisher",
+          "label": "Publisher",
+          "description": "",
           "isRequired": false,
           "condition": {
             "dependencyName": "book_special_edition_toggle",
             "type": "boolean",
             "value": true
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Penguin",
+              "Suhrkamp"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "writing_score",
+          "label": "Writing",
+          "description": "Stil, Satzbau, Ausdruck, literarische Qualität.",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "book"
           },
           "input": {
             "type": "slider",
@@ -3266,7 +3286,13 @@
             "source": "fixed",
             "multi_select_options": [
               "Essay",
-              "Novel"
+              "Novel",
+              "Fantasy",
+              "Science Fiction",
+              "Mystery",
+              "Thriller",
+              "Biography",
+              "Magical Realism"
             ],
             "allowUnknownValues": true
           }
@@ -3276,9 +3302,212 @@
           "label": "Pages",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "book"
+          },
           "input": {
             "type": "number",
             "hidden": false
+          }
+        },
+        {
+          "name": "game_publisher",
+          "label": "Publisher",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "game"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Rockstar",
+              "Valve"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "game_title",
+          "label": "Title",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "game"
+          },
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "multiplayer_available",
+          "label": "Multiplayer",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "",
+            "type": "isSet"
+          },
+          "input": {
+            "type": "toggle",
+            "hidden": false
+          }
+        },
+        {
+          "name": "multiplayer_played",
+          "label": "Multiplayer played",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "",
+            "type": "isSet"
+          },
+          "input": {
+            "type": "toggle",
+            "hidden": false
+          }
+        },
+        {
+          "name": "gameplay_score",
+          "label": "Gameplay",
+          "description": "Mechaniken, Steuerung, Systems Design.",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "game"
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "game_story_score",
+          "label": "Story",
+          "description": "Narrative Qualität",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "game"
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "world_score",
+          "label": "World",
+          "description": "Worldbuilding, Atmosphäre, Artstyle, Leveldesign.",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "game"
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "immersion_score",
+          "label": "Immersion",
+          "description": "Flow, Audio, Feedback, UI, emotionale Verbindung.",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "game"
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "replayability_score",
+          "label": "Replayability",
+          "description": "Wie viel Spaß macht’s nach der Hauptstory? Wiederspielwert.",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "game"
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "multiplayer_score",
+          "label": "Multiplayer",
+          "description": "Wie gut funktioniert Multiplayer. Wieviel Spaß machts?",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "game"
+          },
+          "input": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "release_year",
+          "label": "Release Year",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "game"
+          },
+          "input": {
+            "type": "number",
+            "hidden": false
+          }
+        },
+        {
+          "name": "game_genre",
+          "label": "Genre",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "game"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Strategy",
+              "Simulation",
+              "Story",
+              "Open World",
+              "Adventure ",
+              "Action"
+            ],
+            "allowUnknownValues": true
           }
         },
         {
