@@ -2613,9 +2613,9 @@
           "description": "",
           "isRequired": false,
           "condition": {
-            "dependencyName": "environment",
+            "dependencyName": "category",
             "type": "isExactly",
-            "value": "program"
+            "value": "album"
           },
           "input": {
             "type": "multiselect",
@@ -2633,9 +2633,9 @@
           "description": "",
           "isRequired": false,
           "condition": {
-            "dependencyName": "environment",
+            "dependencyName": "category",
             "type": "isExactly",
-            "value": "program"
+            "value": "album"
           },
           "input": {
             "type": "text",
@@ -2648,9 +2648,39 @@
           "description": "",
           "isRequired": false,
           "condition": {
-            "dependencyName": "environment",
+            "dependencyName": "category",
             "type": "isExactly",
-            "value": "program"
+            "value": "album"
+          },
+          "input": {
+            "type": "toggle",
+            "hidden": false
+          }
+        },
+        {
+          "name": "album_special_edition_title",
+          "label": "Title",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "album_special_edition_toggle",
+            "type": "boolean",
+            "value": true
+          },
+          "input": {
+            "type": "toggle",
+            "hidden": false
+          }
+        },
+        {
+          "name": "instrumental_toggle",
+          "label": "Instrumental",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "album"
           },
           "input": {
             "type": "toggle",
@@ -2662,6 +2692,11 @@
           "label": "Songwriting",
           "description": "Wie gut sind Melodien, Strukturen, musikalische Ideen?",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "album"
+          },
           "input": {
             "type": "slider",
             "min": 0,
@@ -2673,6 +2708,11 @@
           "label": "Production",
           "description": "Mixing, Mastering, Soundqualität, Dynamik.",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "album"
+          },
           "input": {
             "type": "slider",
             "min": 0,
@@ -2684,6 +2724,11 @@
           "label": "Lyrics",
           "description": "Textliche Qualität, Konzepte, Tiefgang.",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "instrumental_toggle",
+            "type": "boolean",
+            "value": false
+          },
           "input": {
             "type": "slider",
             "min": 0,
@@ -2695,6 +2740,11 @@
           "label": "Cohesion",
           "description": "Wie gut funktioniert das Album als Ganzes? Übergänge, Flow, Konsistenz.",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "album"
+          },
           "input": {
             "type": "slider",
             "min": 0,
@@ -2706,6 +2756,11 @@
           "label": "Relisten",
           "description": "Wiederhörbarkeit – wie oft würdest du zurückkehren?",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "album"
+          },
           "input": {
             "type": "slider",
             "min": 0,
@@ -2717,6 +2772,11 @@
           "label": "Creativity",
           "description": "Out of the Box Faktor. Wie kreativ, wie musikalisch Anspruchsvoll ist das Album?",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "album"
+          },
           "input": {
             "type": "slider",
             "min": 0,
@@ -2724,12 +2784,17 @@
           }
         },
         {
-          "name": "release_date",
-          "label": "Release Date",
+          "name": "release_year",
+          "label": "Release Year",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "album"
+          },
           "input": {
-            "type": "date",
+            "type": "number",
             "hidden": false
           }
         },
@@ -2738,6 +2803,11 @@
           "label": "Genre",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "album"
+          },
           "input": {
             "type": "multiselect",
             "source": "fixed",
@@ -2755,6 +2825,11 @@
           "label": "Tracks",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "album"
+          },
           "input": {
             "type": "number",
             "hidden": false
@@ -2765,6 +2840,11 @@
           "label": "Length",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "category",
+            "type": "isExactly",
+            "value": "album"
+          },
           "input": {
             "type": "time",
             "hidden": false
