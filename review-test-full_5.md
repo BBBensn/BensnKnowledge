@@ -1,36 +1,36 @@
 ---
-category: movie
+category: album
+artist:
+  - Kendrick Lamar
+album_title: a
 album_special_edition_toggle: false
-instrumental_toggle: false
-release_year: 2000
-director:
-  - Giorgos Lanthimos
-movie_title: movie
+vocals_toggle: true
+songwriting_score: 0
+production_score: 1
+lyrics_score: 2
+cohesion_score: 3
+relisten_score: 4
+creativity_score: 5
+release_year: 5
+music_genre:
+  - Rock
+tracks: 5
+album_length: 5
 movie_special_edition_toggle: false
-movie_story_score: 6
-acting_score: 2
-editing_score: 7
-soundtrack_score: 6
-direction_score: 2
-movie_genre:
-  - Drama
-actors:
-  - Emma Stone
-movie_lenght: 180
 book_special_edition_toggle: false
 multiplayer_available: false
 multiplayer_played: false
 ai_involvement: human
-summary: gut
+summary: s
 obsidian_type: review
 obsidian_form: Review-Form
 related:
   -
-date created: 2025-11-15 18:12:39
-date modified: 2025-11-15 18:19:22
+date created: 2025-11-15 18:29:37
+date modified: 2025-11-15 18:30:38
 ---
 
-# review-test-full
+# review-test-full_5
 
 ## `= this.artist` - `= this.album_title` | `= this.release_year`
 

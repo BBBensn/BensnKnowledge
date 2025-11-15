@@ -2663,8 +2663,8 @@
           }
         },
         {
-          "name": "instrumental_toggle",
-          "label": "Instrumental",
+          "name": "vocals_toggle",
+          "label": "Vocals",
           "description": "",
           "isRequired": false,
           "condition": {
@@ -2715,9 +2715,9 @@
           "description": "Textliche Qualität, Konzepte, Tiefgang.",
           "isRequired": false,
           "condition": {
-            "dependencyName": "instrumental_toggle",
+            "dependencyName": "vocals_toggle",
             "type": "boolean",
-            "value": false
+            "value": true
           },
           "input": {
             "type": "slider",
@@ -3464,9 +3464,9 @@
           "description": "Wie gut funktioniert Multiplayer. Wieviel Spaß machts?",
           "isRequired": false,
           "condition": {
-            "dependencyName": "category",
-            "type": "isExactly",
-            "value": "game"
+            "dependencyName": "multiplayer_played",
+            "type": "boolean",
+            "value": true
           },
           "input": {
             "type": "slider",
@@ -3555,51 +3555,6 @@
           "input": {
             "type": "textarea",
             "hidden": false
-          }
-        },
-        {
-          "name": "instrumental_toggle",
-          "label": "toggle_helper_movie",
-          "description": "",
-          "isRequired": false,
-          "condition": {
-            "dependencyName": "category",
-            "type": "isExactly",
-            "value": "movie"
-          },
-          "input": {
-            "type": "toggle",
-            "hidden": true
-          }
-        },
-        {
-          "name": "instrumental_toggle",
-          "label": "toggle_helper_book",
-          "description": "",
-          "isRequired": false,
-          "condition": {
-            "dependencyName": "category",
-            "type": "isExactly",
-            "value": "book"
-          },
-          "input": {
-            "type": "toggle",
-            "hidden": true
-          }
-        },
-        {
-          "name": "instrumental_toggle",
-          "label": "toggle_helper_game",
-          "description": "",
-          "isRequired": false,
-          "condition": {
-            "dependencyName": "category",
-            "type": "isExactly",
-            "value": "game"
-          },
-          "input": {
-            "type": "toggle",
-            "hidden": true
           }
         }
       ],
