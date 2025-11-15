@@ -1594,8 +1594,8 @@
           }
         },
         {
-          "name": "workshift",
-          "label": "Workshift",
+          "name": "work_toggle",
+          "label": "Work",
           "description": "",
           "isRequired": false,
           "condition": {
@@ -1604,13 +1604,24 @@
             "value": "personal"
           },
           "input": {
+            "type": "toggle",
+            "hidden": false
+          }
+        },
+        {
+          "name": "workshift",
+          "label": "Workshift",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "work_toggle",
+            "type": "boolean",
+            "value": true
+          },
+          "input": {
             "type": "select",
             "source": "fixed",
             "options": [
-              {
-                "value": "weekend",
-                "label": "Weekend"
-              },
               {
                 "value": "early_shift",
                 "label": "Early Shift"
@@ -1624,10 +1635,77 @@
                 "label": "Night Shift"
               },
               {
-                "value": "vacation",
-                "label": "Vacation"
+                "value": "other",
+                "label": "Other"
               }
             ]
+          }
+        },
+        {
+          "name": "station",
+          "label": "Station",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "work_toggle",
+            "type": "boolean",
+            "value": true
+          },
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "puls24",
+                "label": "Puls24"
+              },
+              {
+                "value": "puls4",
+                "label": "Puls4"
+              },
+              {
+                "value": "atv",
+                "label": "ATV"
+              },
+              {
+                "value": "atv2",
+                "label": "ATV2"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ]
+          }
+        },
+        {
+          "name": "work_reason",
+          "label": "Reason",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "station",
+            "type": "isExactly",
+            "value": "other"
+          },
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "bed_time",
+          "label": "Bedtime (Day before)",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "context",
+            "type": "isExactly",
+            "value": "personal"
+          },
+          "input": {
+            "type": "time",
+            "hidden": false
           }
         },
         {

@@ -21,8 +21,9 @@ obsidian_form: Review-Form
 related:
   -
 date created: 2025-11-15 18:30:38
-date modified: 2025-11-15 18:31:16
+date modified: 2025-11-15 18:40:58
 ---
+
 # review-test-full_6
 
 ## `= this.artist` - `= this.album_title` | `= this.release_year`
