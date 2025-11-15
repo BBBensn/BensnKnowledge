@@ -1,5 +1,5 @@
 {
   "format": "YYYY-MM-DD",
-  "folder": "06_Logs/Daily",
+  "folder": "07_Logs/Daily",
   "template": "00_META/Templates/Daily-Log-Template"
 }
