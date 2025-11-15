@@ -541,10 +541,6 @@
               {
                 "value": "personal",
                 "label": "Personal"
-              },
-              {
-                "value": "pc",
-                "label": "PC"
               }
             ]
           }
@@ -1593,10 +1589,6 @@
               {
                 "value": "general",
                 "label": "General"
-              },
-              {
-                "value": "",
-                "label": ""
               }
             ]
           }
@@ -1667,30 +1659,6 @@
             "type": "slider",
             "min": 0,
             "max": 100
-          }
-        },
-        {
-          "name": "mood_tags",
-          "label": "Mood Tags",
-          "description": "",
-          "isRequired": false,
-          "condition": {
-            "dependencyName": "context",
-            "type": "isExactly",
-            "value": "personal"
-          },
-          "input": {
-            "type": "multiselect",
-            "source": "fixed",
-            "multi_select_options": [
-              "happy",
-              "sad",
-              "neutral",
-              "active",
-              "lazy",
-              "horny"
-            ],
-            "allowUnknownValues": true
           }
         },
         {
@@ -2166,16 +2134,6 @@
           }
         },
         {
-          "name": "notes",
-          "label": "Notes",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "textarea",
-            "hidden": false
-          }
-        },
-        {
           "name": "sources",
           "label": "Sources",
           "description": "",
@@ -2192,6 +2150,16 @@
           "isRequired": false,
           "input": {
             "type": "tag",
+            "hidden": false
+          }
+        },
+        {
+          "name": "summary",
+          "label": "Summary",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "textarea",
             "hidden": false
           }
         }
@@ -2548,264 +2516,6 @@
               "Templater"
             ],
             "allowUnknownValues": true
-          }
-        },
-        {
-          "name": "ai_involvement",
-          "label": "AI-Involvement",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "select",
-            "source": "fixed",
-            "options": [
-              {
-                "value": "human",
-                "label": "Human"
-              },
-              {
-                "value": "partly_ai",
-                "label": "Partly AI"
-              },
-              {
-                "value": "ai_written",
-                "label": "AI Written"
-              }
-            ]
-          }
-        },
-        {
-          "name": "tags",
-          "label": "Tags",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "tag",
-            "hidden": false
-          }
-        },
-        {
-          "name": "summary",
-          "label": "Summary",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "textarea",
-            "hidden": false
-          }
-        }
-      ],
-      "version": "1"
-    },
-    {
-      "title": "Idea",
-      "name": "Documentations-Form",
-      "fields": [
-        {
-          "name": "topic",
-          "label": "Topic",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "text",
-            "hidden": false
-          }
-        },
-        {
-          "name": "Documentation Type",
-          "label": "doc_type",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "select",
-            "source": "fixed",
-            "options": [
-              {
-                "value": "system _setup",
-                "label": "System Setup"
-              },
-              {
-                "value": "workflow",
-                "label": "Workflow"
-              },
-              {
-                "value": "project",
-                "label": "Project"
-              },
-              {
-                "value": "experiment",
-                "label": "Experiment"
-              },
-              {
-                "value": "other",
-                "label": "Other"
-              }
-            ]
-          }
-        },
-        {
-          "name": "context",
-          "label": "Context",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "select",
-            "source": "fixed",
-            "options": [
-              {
-                "value": "coding",
-                "label": "Coding"
-              },
-              {
-                "value": "pc",
-                "label": "PC"
-              },
-              {
-                "value": "music",
-                "label": "Music"
-              },
-              {
-                "value": "fashion",
-                "label": "Fashion"
-              },
-              {
-                "value": "creative",
-                "label": "Creative"
-              },
-              {
-                "value": "research",
-                "label": "Research"
-              },
-              {
-                "value": "work",
-                "label": "Work"
-              },
-              {
-                "value": "personal",
-                "label": "Personal"
-              },
-              {
-                "value": "general",
-                "label": "General"
-              }
-            ]
-          }
-        },
-        {
-          "name": "timebased",
-          "label": "Timebased",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "toggle",
-            "hidden": false
-          }
-        },
-        {
-          "name": "time_relevant",
-          "label": "Time",
-          "description": "",
-          "isRequired": false,
-          "condition": {
-            "dependencyName": "timebased",
-            "type": "boolean",
-            "value": true
-          },
-          "input": {
-            "type": "toggle",
-            "hidden": false
-          }
-        },
-        {
-          "name": "start_date",
-          "label": "Start",
-          "description": "",
-          "isRequired": false,
-          "condition": {
-            "dependencyName": "timebased",
-            "type": "boolean",
-            "value": true
-          },
-          "input": {
-            "type": "date",
-            "hidden": false
-          }
-        },
-        {
-          "name": "start_time",
-          "label": "Start",
-          "description": "",
-          "isRequired": false,
-          "condition": {
-            "dependencyName": "time_relevant",
-            "type": "boolean",
-            "value": true
-          },
-          "input": {
-            "type": "time",
-            "hidden": false
-          }
-        },
-        {
-          "name": "end_date",
-          "label": "End",
-          "description": "",
-          "isRequired": false,
-          "condition": {
-            "dependencyName": "timebased",
-            "type": "boolean",
-            "value": true
-          },
-          "input": {
-            "type": "date",
-            "hidden": false
-          }
-        },
-        {
-          "name": "end_time",
-          "label": "End",
-          "description": "",
-          "isRequired": false,
-          "condition": {
-            "dependencyName": "time_relevant",
-            "type": "boolean",
-            "value": true
-          },
-          "input": {
-            "type": "time",
-            "hidden": false
-          }
-        },
-        {
-          "name": "status",
-          "label": "Status",
-          "description": "",
-          "isRequired": false,
-          "input": {
-            "type": "select",
-            "source": "fixed",
-            "options": [
-              {
-                "value": "concept",
-                "label": "Concept"
-              },
-              {
-                "value": "draft",
-                "label": "Draft"
-              },
-              {
-                "value": "in_development",
-                "label": "In Development"
-              },
-              {
-                "value": "developed",
-                "label": "Developed"
-              },
-              {
-                "value": "implemented",
-                "label": "Implemented"
-              }
-            ]
           }
         },
         {

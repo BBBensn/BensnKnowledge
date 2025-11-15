@@ -9,7 +9,7 @@ obsidian_form: Catalog-Form
 related:
   -
 date created: 2025-11-14 22:44:02
-date modified: 2025-11-14 23:17:10
+date modified: 2025-11-15 09:29:31
 ---
 
 # Obsidian-Graph-Filters

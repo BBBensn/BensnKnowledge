@@ -10,7 +10,7 @@ obsidian_form: Catalog-Form
 related:
   -
 date created: 2025-11-14 05:09:53
-date modified: 2025-11-14 19:53:37
+date modified: 2025-11-15 09:29:27
 ---
 
 # Linux-Themes-Settings-List

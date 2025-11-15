@@ -12,7 +12,7 @@ obsidian_form: ToDo-Form
 related:
   - 
 date created: 2025-11-14 05:02:16
-date modified: 2025-11-14 19:53:26
+date modified: 2025-11-15 09:27:56
 ---
 
 # KnowledgeVault-ToDo
