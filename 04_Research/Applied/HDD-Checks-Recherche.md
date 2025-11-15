@@ -15,7 +15,7 @@ obsidian_form: Research-Form
 related:
   -
 date created: 2025-11-14 18:13:58
-date modified: 2025-11-14 20:00:35
+date modified: 2025-11-15 11:02:33
 ---
 
 # HDD-Checks-Recherche

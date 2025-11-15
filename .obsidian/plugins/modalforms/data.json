@@ -2566,8 +2566,8 @@
       "version": "1"
     },
     {
-      "title": "Cheatsheet",
-      "name": "Cheatsheet-Form-copy",
+      "title": "Review",
+      "name": "Review-Form",
       "fields": [
         {
           "name": "topic",
@@ -2580,8 +2580,8 @@
           }
         },
         {
-          "name": "environment",
-          "label": "Environment",
+          "name": "category",
+          "label": "Category",
           "description": "",
           "isRequired": false,
           "input": {
@@ -2589,35 +2589,27 @@
             "source": "fixed",
             "options": [
               {
-                "value": "linux",
-                "label": "Linux"
+                "value": "album",
+                "label": "Album"
               },
               {
-                "value": "windows",
-                "label": "Windows"
+                "value": "movie",
+                "label": "Movie"
               },
               {
-                "value": "mac",
-                "label": "MAC"
+                "value": "book",
+                "label": "Book"
               },
               {
-                "value": "global",
-                "label": "Global"
-              },
-              {
-                "value": "program",
-                "label": "Program"
-              },
-              {
-                "value": "plugin",
-                "label": "Plugin"
+                "value": "game",
+                "label": "Game"
               }
             ]
           }
         },
         {
-          "name": "program",
-          "label": "Program",
+          "name": "artist",
+          "label": "Artist",
           "description": "",
           "isRequired": false,
           "condition": {
@@ -2629,53 +2621,277 @@
             "type": "multiselect",
             "source": "fixed",
             "multi_select_options": [
-              "Obsidian",
-              "VS-Code",
-              "Zen",
-              "Affinity"
+              "Kendrick Lamar",
+              "Neutral Milk Hotel"
             ],
             "allowUnknownValues": true
           }
         },
         {
-          "name": "program",
-          "label": "Program",
+          "name": "album_title",
+          "label": "Title",
           "description": "",
           "isRequired": false,
           "condition": {
             "dependencyName": "environment",
             "type": "isExactly",
-            "value": "plugin"
+            "value": "program"
           },
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "album_special_edition_toggle",
+          "label": "Special Edition",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "environment",
+            "type": "isExactly",
+            "value": "program"
+          },
+          "input": {
+            "type": "toggle",
+            "hidden": false
+          }
+        },
+        {
+          "name": "album_special_edition_title",
+          "label": "Title",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "release_date",
+          "label": "Release Date",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "date",
+            "hidden": false
+          }
+        },
+        {
+          "name": "music_genre",
+          "label": "Genre",
+          "description": "",
+          "isRequired": false,
           "input": {
             "type": "multiselect",
             "source": "fixed",
             "multi_select_options": [
-              "Obsidian",
-              "VS-Code",
-              "Zen",
-              "Affinity"
+              "HipHop",
+              "Rock",
+              "EDM",
+              "Pop"
             ],
             "allowUnknownValues": true
           }
         },
         {
-          "name": "plugin",
-          "label": "Plugin",
+          "name": "tracks",
+          "label": "Tracks",
           "description": "",
           "isRequired": false,
-          "condition": {
-            "dependencyName": "environment",
-            "type": "isExactly",
-            "value": "plugin"
-          },
+          "input": {
+            "type": "number",
+            "hidden": false
+          }
+        },
+        {
+          "name": "album_length",
+          "label": "Length",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "time",
+            "hidden": false
+          }
+        },
+        {
+          "name": "director",
+          "label": "Director",
+          "description": "",
+          "isRequired": false,
           "input": {
             "type": "multiselect",
             "source": "fixed",
             "multi_select_options": [
-              "Templater"
+              "Giorgos Lanthimos",
+              "Quentin Tarrantino",
+              "Stanley Kubrick",
+              "Martin Scorsese"
             ],
             "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "movie_title",
+          "label": "Title",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "movie_special_edition_toggle",
+          "label": "Special Edition",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "toggle",
+            "hidden": false
+          }
+        },
+        {
+          "name": "movie_special_edition_title",
+          "label": "Edition",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "release_year",
+          "label": "Release Year",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "number",
+            "hidden": false
+          }
+        },
+        {
+          "name": "movie_genre",
+          "label": "Genre",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Drama",
+              "Thriller",
+              "Documentation",
+              "Comedy"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "actors",
+          "label": "Actors",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Emma Stone",
+              "Jennifer Lawrence",
+              "Robert De Niro"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "movie_lenght",
+          "label": "Length",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "time",
+            "hidden": false
+          }
+        },
+        {
+          "name": "author",
+          "label": "Author",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Haruki Murakami",
+              "Albert Camus"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "book_title",
+          "label": "Title",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "book_special_edition_toggle",
+          "label": "Special Edition",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "toggle",
+            "hidden": false
+          }
+        },
+        {
+          "name": "book_special_edition_title",
+          "label": "Title",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "release_year",
+          "label": "Release Year",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "number",
+            "hidden": false
+          }
+        },
+        {
+          "name": "book_genre",
+          "label": "Genre",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Essay",
+              "Novel"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "pages",
+          "label": "Pages",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "number",
+            "hidden": false
           }
         },
         {
