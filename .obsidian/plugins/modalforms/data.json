@@ -1649,25 +1649,6 @@
           },
           "input": {
             "type": "text",
-            "source": "fixed",
-            "options": [
-              {
-                "value": "early_shift",
-                "label": "Early Shift"
-              },
-              {
-                "value": "late_shift",
-                "label": "Late Shift"
-              },
-              {
-                "value": "night_shift",
-                "label": "Night Shift"
-              },
-              {
-                "value": "other",
-                "label": "Other"
-              }
-            ],
             "hidden": false
           }
         },
@@ -1794,8 +1775,7 @@
               "tired",
               "horny"
             ],
-            "allowUnknownValues": true,
-            "query": ""
+            "allowUnknownValues": true
           }
         },
         {
