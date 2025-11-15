@@ -20,31 +20,27 @@ related:
 
 ### Basisinformationen
 
-- Kategorie: <% tp.frontmatter.category %>
+- Kategorie: `= this.artist`
     
-- Thema / Werk: <% tp.frontmatter.topic %>
+- Thema / Werk: `= this.artist`
     
 
 ### Bewertung (Album – Sliders)
 
-**Einzelbewertungen (1–10):**
+#### Einzelbewertungen (1–10):
 
-- Songwriting: <% tp.frontmatter.songwriting_score %>/10
-    
-- Production: <% tp.frontmatter.production_score %>/10
-    
-- Lyrics: <% tp.frontmatter.lyrics_score %>/10
-    
-- Cohesion: <% tp.frontmatter.cohesion_score %>/10
-    
-- Relisten: <% tp.frontmatter.relisten_score %>/10
-    
-- Creativity: <% tp.frontmatter.creativity_score %>/10
-    
+| Kategorie   | Wert                                 |
+| ----------- | ------------------------------------ |
+| Songwriting | `= this.songwriting_score + " / 10"` |
+| Production  | `= this.production_score + " / 10"`  |
+| Lyrics      | `= this.lyrics_score + " / 10"`      |
+| Cohesion    | `= this.cohesion_score + " / 10"`    |
+| Relisten    | `= this.relisten_score + " / 10"`    |
+| Creativity  | `= this.creativity_score + " / 10"`  |
+ 
+#### Automatisch berechneter Gesamtscore (Album, Vocal vs. Instrumental):
 
-**Automatisch berechneter Gesamtscore (Album, Vocal vs. Instrumental):**
-
-```
+```dataviewjs
 const s = dv.current();
 
 // Kategorie prüfen, damit der Block in anderen Review-Kategorien keinen Unsinn macht
