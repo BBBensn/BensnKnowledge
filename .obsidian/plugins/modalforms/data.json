@@ -1559,36 +1559,32 @@
             "source": "fixed",
             "options": [
               {
-                "value": "neutral",
-                "label": "Neutral"
+                "value": "personal",
+                "label": "Personal"
               },
               {
-                "value": "happy",
-                "label": "Happy"
+                "value": "pc",
+                "label": "PC"
               },
               {
-                "value": "sad",
-                "label": "Sad"
+                "value": "coding",
+                "label": "Coding"
               },
               {
-                "value": "exhausted",
-                "label": "Exhausted"
+                "value": "fashion",
+                "label": "Fashion"
               },
               {
-                "value": "tired",
-                "label": "Tired"
+                "value": "research",
+                "label": "Research"
               },
               {
-                "value": "busy",
-                "label": "Busy"
+                "value": "creative",
+                "label": "Creative"
               },
               {
-                "value": "excited",
-                "label": "Excited"
-              },
-              {
-                "value": "horny",
-                "label": "Horny"
+                "value": "work",
+                "label": "Work"
               }
             ]
           }
@@ -1642,6 +1638,40 @@
           }
         },
         {
+          "name": "reason_shift",
+          "label": "Reason",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "workshift",
+            "type": "isExactly",
+            "value": "other"
+          },
+          "input": {
+            "type": "text",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "early_shift",
+                "label": "Early Shift"
+              },
+              {
+                "value": "late_shift",
+                "label": "Late Shift"
+              },
+              {
+                "value": "night_shift",
+                "label": "Night Shift"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ],
+            "hidden": false
+          }
+        },
+        {
           "name": "station",
           "label": "Station",
           "description": "",
@@ -1679,7 +1709,7 @@
           }
         },
         {
-          "name": "work_reason",
+          "name": "reason_station",
           "label": "Reason",
           "description": "",
           "isRequired": false,
@@ -1744,6 +1774,11 @@
           "label": "Mood Tags",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "context",
+            "type": "isExactly",
+            "value": "personal"
+          },
           "input": {
             "type": "multiselect",
             "source": "fixed",
@@ -1761,11 +1796,6 @@
             ],
             "allowUnknownValues": true,
             "query": ""
-          },
-          "condition": {
-            "dependencyName": "context",
-            "type": "isExactly",
-            "value": "personal"
           }
         },
         {
