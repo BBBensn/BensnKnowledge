@@ -9,7 +9,7 @@ summary: Übersicht für die wichtigsten Linux Shortcuts.
 obsidian_type: cheatsheet
 obsidian_form: Cheatsheet-Form
 related:
-  - "[[07_Resources/Cheatsheets/Linux-Terminalbefehle-Cheatsheet|Linux-Terminalbefehle-Cheatsheet]]"
+  - "[[Linux-Terminalbefehle-Cheatsheet|Linux-Terminalbefehle-Cheatsheet]]"
 date created: 2025-11-14 03:28:16
 date modified: 2025-11-14 19:58:23
 ---

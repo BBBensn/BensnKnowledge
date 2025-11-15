@@ -11,7 +11,7 @@ summary: Masterprompt für Chat-GPT in dem die Regeln für die Erstellung von Ob
 obsidian_type: prompt
 obsidian_form: Prompt-Form
 related:
-  - "[[../../07_Resources/Prompts/Templates-Masterprompt|Templates-Masterprompt]]"
+  - "[[Templates-Masterprompt|Templates-Masterprompt]]"
   - "[[Obsidian-Restart-Prompt]]"
 date created: 2025-11-14 04:27:04
 date modified: 2025-11-14 19:55:12

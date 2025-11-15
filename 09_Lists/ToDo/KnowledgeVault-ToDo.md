@@ -34,7 +34,7 @@ Hier kommen die eigentlichen Tasks hin.
 
 - [ ] [[BensnKnowledgeVault]]
 
-## [[Dual Boot Setup Surface]]
+## [[../../06_Tutorials/Created/Dual Boot Setup Surface]]
 
 - [ ] [[Linux-Terminal Grundlagen]]
 - [ ] [[Windows – Clean Install und Wiederherstellungspunkte]]

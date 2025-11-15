@@ -124,8 +124,8 @@ gnome-disks → Benchmark
 ## Nächste Schritte
 
 - [ ] Durchführung eigener Benchmarks anhand der beiden Skripte:
-	- [ ] [[../../07_Resources/Codebin/hdd_health.sh-Script|hdd_health.sh-Script]] 
-	- [ ] [[../../07_Resources/Codebin/hdd_surface_bench.sh-Script|hdd_surface_bench.sh-Script]] 
+	- [ ] [[../../08_Resources/Codebin/hdd_health.sh-Script|hdd_health.sh-Script]] 
+	- [ ] [[../../08_Resources/Codebin/hdd_surface_bench.sh-Script|hdd_surface_bench.sh-Script]] 
         
 - [ ] Vergleich mehrerer gebrauchter Platten derselben Charge.
 - [ ] Dokumentation der Benchmark-Kurven.

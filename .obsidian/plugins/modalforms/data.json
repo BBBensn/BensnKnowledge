@@ -2564,6 +2564,166 @@
         }
       ],
       "version": "1"
+    },
+    {
+      "title": "Cheatsheet",
+      "name": "Cheatsheet-Form-copy",
+      "fields": [
+        {
+          "name": "topic",
+          "label": "Topic",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "environment",
+          "label": "Environment",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "linux",
+                "label": "Linux"
+              },
+              {
+                "value": "windows",
+                "label": "Windows"
+              },
+              {
+                "value": "mac",
+                "label": "MAC"
+              },
+              {
+                "value": "global",
+                "label": "Global"
+              },
+              {
+                "value": "program",
+                "label": "Program"
+              },
+              {
+                "value": "plugin",
+                "label": "Plugin"
+              }
+            ]
+          }
+        },
+        {
+          "name": "program",
+          "label": "Program",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "environment",
+            "type": "isExactly",
+            "value": "program"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Obsidian",
+              "VS-Code",
+              "Zen",
+              "Affinity"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "program",
+          "label": "Program",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "environment",
+            "type": "isExactly",
+            "value": "plugin"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Obsidian",
+              "VS-Code",
+              "Zen",
+              "Affinity"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "plugin",
+          "label": "Plugin",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "environment",
+            "type": "isExactly",
+            "value": "plugin"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Templater"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
+          "name": "ai_involvement",
+          "label": "AI-Involvement",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "human",
+                "label": "Human"
+              },
+              {
+                "value": "partly_ai",
+                "label": "Partly AI"
+              },
+              {
+                "value": "ai_written",
+                "label": "AI Written"
+              }
+            ]
+          }
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "tag",
+            "hidden": false
+          }
+        },
+        {
+          "name": "summary",
+          "label": "Summary",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "textarea",
+            "hidden": false
+          }
+        }
+      ],
+      "version": "1"
     }
   ]
 }
