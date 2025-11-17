@@ -1675,12 +1675,16 @@
                 "label": "Puls4"
               },
               {
-                "value": "atv",
-                "label": "ATV"
+                "value": "atv_atv_2",
+                "label": "ATV / ATV 2"
               },
               {
-                "value": "atv2",
-                "label": "ATV2"
+                "value": "left_side",
+                "label": "zu zweit Links"
+              },
+              {
+                "value": "right_side",
+                "label": "zu zweit Rechts"
               },
               {
                 "value": "other",
@@ -1775,7 +1779,8 @@
               "tired",
               "horny"
             ],
-            "allowUnknownValues": true
+            "allowUnknownValues": true,
+            "query": ""
           }
         },
         {
