@@ -1783,6 +1783,25 @@
           }
         },
         {
+          "name": "songs_of_the_day",
+          "label": "Song(s) of the Day",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "context",
+            "type": "isExactly",
+            "value": "personal"
+          },
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "Darude - Sandstorm"
+            ],
+            "allowUnknownValues": true
+          }
+        },
+        {
           "name": "ai_involvement",
           "label": "AI-Involvement",
           "description": "",

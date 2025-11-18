@@ -13,8 +13,9 @@ obsidian_form: Cheatsheet-Form
 related:
   -
 date created: 2025-11-17 23:51:20
-date modified: 2025-11-17 23:53:25
+date modified: 2025-11-18 22:52:40
 ---
+
 # Resolve Cheatsheet
 
 
