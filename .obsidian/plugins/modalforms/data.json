@@ -1779,8 +1779,7 @@
               "tired",
               "horny"
             ],
-            "allowUnknownValues": true,
-            "query": ""
+            "allowUnknownValues": true
           }
         },
         {
