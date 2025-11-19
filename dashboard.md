@@ -1,7 +1,8 @@
 ---
 date created: 2025-11-19 04:26:57
-date modified: 2025-11-19 04:28:02
+date modified: 2025-11-19 04:39:05
 ---
+
 # Daily Log – Jahres-Dashboard (Beispiel)
 
 > Hinweis: Passe Pfade (`from "06_Logs/Daily"`), Feldnamen und Filter an deine tatsächliche Struktur an.
@@ -19,7 +20,7 @@ table file.day as Datum,
        songs_of_the_day as "Song des Tages",
        workshift as "Schicht",
        tags
-from "06_Logs/Daily"
+from "07_Logs/Daily"
 where obsidian_type = "daily_log"
 sort file.day desc
 ```
@@ -32,7 +33,7 @@ sort file.day desc
 
 ```dataviewjs
 // Parameter anpassen
-const folder = "06_Logs/Daily";
+const folder = "07_Logs/Daily";
 
 function parseTime(t) {
     if (!t) return null;
@@ -77,7 +78,7 @@ dv.table([
 ```dataview
 table month(file.day) as Monat,
       round(avg(sleep_hours), 1) as "Ø Schlaf (h)"
-from "06_Logs/Daily"
+from "07_Logs/Daily"
 where obsidian_type = "daily_log" and sleep_hours
 group by month(file.day)
 sort Monat asc
@@ -96,7 +97,7 @@ table file.day as Datum,
       mood as "Stimmung (0–100)",
       mood_tags as "Tags",
       summary as "Kurznotiz"
-from "06_Logs/Daily"
+from "07_Logs/Daily"
 where obsidian_type = "daily_log" and mood
 sort file.day asc
 ```
@@ -108,7 +109,7 @@ table file.day as Datum,
       mood,
       mood_tags,
       summary
-from "06_Logs/Daily"
+from "07_Logs/Daily"
 where obsidian_type = "daily_log" and mood
 sort mood desc
 limit 10
@@ -119,7 +120,7 @@ table file.day as Datum,
       mood,
       mood_tags,
       summary
-from "06_Logs/Daily"
+from "07_Logs/Daily"
 where obsidian_type = "daily_log" and mood
 sort mood asc
 limit 10
@@ -134,7 +135,7 @@ limit 10
 ```dataview
 table file.day as Datum,
       songs_of_the_day
-from "06_Logs/Daily"
+from "07_Logs/Daily"
 where obsidian_type = "daily_log" and songs_of_the_day
 sort file.day asc
 ```
@@ -142,7 +143,7 @@ sort file.day asc
 ### Häufigste Songs des Jahres (Ranking)
 
 ```dataviewjs
-const pages = dv.pages("06_Logs/Daily").where(p => p.obsidian_type === "daily_log" && p.songs_of_the_day);
+const pages = dv.pages("07_Logs/Daily").where(p => p.obsidian_type === "daily_log" && p.songs_of_the_day);
 
 let counts = {};
 
@@ -176,7 +177,7 @@ table file.day as Datum,
       mood_tags,
       tags,
       summary
-from "06_Logs/Daily"
+from "07_Logs/Daily"
 where obsidian_type = "daily_log" and contains(tags, "Christopolus")
 sort file.day desc
 ```
@@ -187,7 +188,7 @@ table file.day as Datum,
       mood_tags,
       tags,
       summary
-from "06_Logs/Daily"
+from "07_Logs/Daily"
 where obsidian_type = "daily_log" and contains(tags, "stoned")
 sort file.day desc
 ```
@@ -205,7 +206,7 @@ table file.day as Datum,
       workshift as "Schicht",
       station as "Sender",
       summary
-from "06_Logs/Daily"
+from "07_Logs/Daily"
 where obsidian_type = "daily_log" and work_toggle = true
 sort file.day desc
 ```
@@ -213,7 +214,7 @@ sort file.day desc
 ### Schicht-Statistik
 
 ```dataviewjs
-const workPages = dv.pages("06_Logs/Daily").where(p => p.obsidian_type === "daily_log" && p.work_toggle === true);
+const workPages = dv.pages("07_Logs/Daily").where(p => p.obsidian_type === "daily_log" && p.work_toggle === true);
 
 let counts = {};
 
@@ -236,7 +237,7 @@ table
   round(avg(mood), 1) as "Ø Stimmung",
   length(filter(rows, (r) => r.work_toggle = true)) as "Arbeitstage (Anzahl)",
   length(rows) as "Logged Days"
-from "06_Logs/Daily"
+from "07_Logs/Daily"
 where obsidian_type = "daily_log" and file.year = 2025
 group by file.year
 ```
@@ -262,7 +263,7 @@ table
   station,
   tags,
   summary
-from "06_Logs/Daily"
+from "07_Logs/Daily"
 where obsidian_type = "daily_log" and file.year = 2025
 sort file.day asc
 ```
