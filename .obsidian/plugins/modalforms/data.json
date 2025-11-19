@@ -1779,7 +1779,8 @@
               "tired",
               "horny"
             ],
-            "allowUnknownValues": true
+            "allowUnknownValues": true,
+            "query": ""
           }
         },
         {
@@ -1798,7 +1799,87 @@
             "multi_select_options": [
               "Darude - Sandstorm"
             ],
-            "allowUnknownValues": true
+            "allowUnknownValues": true,
+            "query": ""
+          }
+        },
+        {
+          "name": "mast",
+          "label": "Masturbated",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "context",
+            "type": "isExactly",
+            "value": "personal"
+          },
+          "input": {
+            "type": "toggle",
+            "hidden": false
+          }
+        },
+        {
+          "name": "mast_times",
+          "label": "TImes",
+          "description": "",
+          "isRequired": false,
+          "condition": {
+            "dependencyName": "mast",
+            "type": "boolean",
+            "value": true
+          },
+          "input": {
+            "type": "number",
+            "hidden": false
+          }
+        },
+        {
+          "name": "mast_tools",
+          "label": "Toys",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "multiselect",
+            "source": "fixed",
+            "multi_select_options": [
+              "SF1",
+              "SF2",
+              "dpr",
+              "bb",
+              ""
+            ],
+            "allowUnknownValues": true,
+            "query": ""
+          },
+          "condition": {
+            "dependencyName": "mast",
+            "type": "boolean",
+            "value": true
+          }
+        },
+        {
+          "name": "mast_notes",
+          "label": "Notes",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "textarea",
+            "source": "fixed",
+            "multi_select_options": [
+              "SF1",
+              "SF2",
+              "dpr",
+              "bb",
+              ""
+            ],
+            "allowUnknownValues": true,
+            "query": "",
+            "hidden": false
+          },
+          "condition": {
+            "dependencyName": "mast",
+            "type": "boolean",
+            "value": true
           }
         },
         {
