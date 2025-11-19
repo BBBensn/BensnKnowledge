@@ -1779,8 +1779,7 @@
               "tired",
               "horny"
             ],
-            "allowUnknownValues": true,
-            "query": ""
+            "allowUnknownValues": true
           }
         },
         {
@@ -1799,8 +1798,7 @@
             "multi_select_options": [
               "Darude - Sandstorm"
             ],
-            "allowUnknownValues": true,
-            "query": ""
+            "allowUnknownValues": true
           }
         },
         {
@@ -1838,6 +1836,11 @@
           "label": "Toys",
           "description": "",
           "isRequired": false,
+          "condition": {
+            "dependencyName": "mast",
+            "type": "boolean",
+            "value": true
+          },
           "input": {
             "type": "multiselect",
             "source": "fixed",
@@ -1848,13 +1851,7 @@
               "bb",
               ""
             ],
-            "allowUnknownValues": true,
-            "query": ""
-          },
-          "condition": {
-            "dependencyName": "mast",
-            "type": "boolean",
-            "value": true
+            "allowUnknownValues": true
           }
         },
         {
@@ -1862,24 +1859,14 @@
           "label": "Notes",
           "description": "",
           "isRequired": false,
-          "input": {
-            "type": "textarea",
-            "source": "fixed",
-            "multi_select_options": [
-              "SF1",
-              "SF2",
-              "dpr",
-              "bb",
-              ""
-            ],
-            "allowUnknownValues": true,
-            "query": "",
-            "hidden": false
-          },
           "condition": {
             "dependencyName": "mast",
             "type": "boolean",
             "value": true
+          },
+          "input": {
+            "type": "textarea",
+            "hidden": false
           }
         },
         {
