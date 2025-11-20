@@ -1,6 +1,6 @@
 ---
 date created: 2025-11-19 04:26:57
-date modified: 2025-11-19 05:36:36
+date modified: 2025-11-20 05:44:46
 ---
 
 # Daily Log – Jahres-Dashboard (Beispiel)
@@ -32,8 +32,8 @@ sort file.day desc
 > Annahme: `bed_time` und `got_up_at` sind im Format `HH:mm` und beziehen sich auf eine Nacht (wenn du über Mitternacht schläfst, wird das in der Berechnung berücksichtigt).
 
 ```dataviewjs
-// Parameter anpassen
-const folder = "07_Logs/Daily";
+// Pfad zu deinen Dailies (anpassen, falls nötig)
+const folder = '"07_Logs/Daily"';
 
 function parseTime(t) {
     if (!t) return null;
@@ -65,12 +65,11 @@ for (let p of dv.pages(folder).where(p => p.obsidian_type === "daily_log")) {
 
 rows.sort((a, b) => a.date > b.date ? -1 : 1);
 
-dv.table([
-    "Datum",
-    "Schlafenszeit",
-    "Aufgestanden",
-    "Schlafdauer (h)"
-], rows.map(r => [r.date, r.bed, r.up, r.hours]));
+dv.table(
+    ["Datum", "Schlafenszeit", "Aufgestanden", "Schlafdauer (h)"],
+    rows.map(r => [r.date, r.bed, r.up, r.hours])
+);
+
 ```
 
 ### Ø Schlafdauer pro Monat
@@ -143,7 +142,8 @@ sort file.day asc
 ### Häufigste Songs des Jahres (Ranking)
 
 ```dataviewjs
-const pages = dv.pages("07_Logs/Daily").where(p => p.obsidian_type === "daily_log" && p.songs_of_the_day);
+const pages = dv.pages('"07_Logs/Daily"')
+    .where(p => p.obsidian_type === "daily_log" && p.songs_of_the_day);
 
 let counts = {};
 
@@ -161,6 +161,7 @@ let data = Object.entries(counts)
 const top = data.slice(0, 20);
 
 dv.table(["Song", "Anzahl"], top.map(x => [x.song, x.count]));
+
 ```
 
 ---
@@ -214,7 +215,8 @@ sort file.day desc
 ### Schicht-Statistik
 
 ```dataviewjs
-const workPages = dv.pages("07_Logs/Daily").where(p => p.obsidian_type === "daily_log" && p.work_toggle === true);
+const workPages = dv.pages('"07_Logs/Daily"')
+    .where(p => p.obsidian_type === "daily_log" && p.work_toggle === true);
 
 let counts = {};
 
@@ -225,7 +227,76 @@ for (let p of workPages) {
 
 let data = Object.entries(counts).map(([shift, count]) => ({ shift, count }));
 
-dv.table(["Schicht", "Anzahl Tage"], data.map(d => [d.shift, d.count]));
+dv.table(
+    ["Schicht", "Anzahl Tage"],
+    data.map(d => [d.shift, d.count])
+);
+```
+
+### Sender - Statistik
+
+ ```dataviewjs
+ const workPages = dv.pages('"07_Logs/Daily"')
+    .where(p => p.obsidian_type === "daily_log"
+             && p.work_toggle === true
+             && p.station);
+
+// Station kann theoretisch auch ein Array sein → defensiv behandeln
+let counts = {};
+
+for (let p of workPages) {
+    const stations = Array.isArray(p.station) ? p.station : [p.station];
+
+    for (let s of stations) {
+        counts[s] = (counts[s] ?? 0) + 1;
+    }
+}
+
+let data = Object.entries(counts)
+    .map(([station, count]) => ({ station, count }))
+    .sort((a, b) => b.count - a.count);
+
+dv.table(
+    ["Station", "Anzahl Tage"],
+    data.map(d => [d.station, d.count])
+);
+
+ ```
+
+### Schicht + Sender Statistik
+
+```dataviewjs
+const workPages = dv.pages('"07_Logs/Daily"')
+    .where(p => p.obsidian_type === "daily_log"
+             && p.work_toggle === true
+             && p.station);
+
+// Map: "Schicht | Station" → Anzahl Tage
+let stats = {};
+
+for (let p of workPages) {
+    const shift   = p.workshift ?? "unbekannt";
+    const station = p.station   ?? "unbekannt";
+
+    const key = `${shift} | ${station}`;
+    stats[key] = (stats[key] ?? 0) + 1;
+}
+
+let rows = Object.entries(stats)
+    .map(([key, count]) => {
+        const [shift, station] = key.split(" | ");
+        return { shift, station, count };
+    })
+    .sort((a, b) =>
+        a.shift.localeCompare(b.shift) ||
+        a.station.localeCompare(b.station)
+    );
+
+dv.table(
+    ["Schicht", "Station", "Anzahl Tage"],
+    rows.map(r => [r.shift, r.station, r.count])
+);
+
 ```
 
 ---
