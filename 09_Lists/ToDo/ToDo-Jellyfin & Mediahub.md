@@ -15,7 +15,7 @@ obsidian_form: ToDo-Form
 related:
   -
 date created: 2025-11-19 11:09:00
-date modified: 2025-11-19 11:18:17
+date modified: 2025-11-20 08:33:38
 ---
 
 # ToDo-Jellyfin & Mediahub
@@ -35,6 +35,8 @@ Für die Einrichtung von Jellyfin muss einiges erledigt werden, auch vorbereitet
  - [ ] Chat Daten klären
 	 - [ ] Schauen ob auf den HDDS's evtl. noch webm Files sind die ich am Rechner nicht hab, wenn ja --> reparieren und auf h265 bringen
 	 - [ ] am besten: alles am PC und einmal neu sauber aufbauen (pder schon auf hdd per script überprüfen, aber files sollte sowieso geschnitten werden)
+		 - [ ] schauen welche files nur in wrong existieren --> save --> checken ob ton oder nicht
+		 - [ ] schauen welche files nur in corrupt exisitereen --> in no sound folder
 
 ### ToDo 2
 
