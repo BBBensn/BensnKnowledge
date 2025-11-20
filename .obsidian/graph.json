@@ -1,6 +1,6 @@
 {
-  "collapse-filter": true,
-  "search": "-path:\"00_META\"  -path:\"07_Resources/Cheatsheets\"  -path:\"06_Logs/Daily\"  -path:\"07_Resources/Prompts\"  -path:\"08_Lists/ToDo/KnowledgeVault-ToDo\" -path:\"08_Lists/Catalogs\" -path:\"07_Resources/Codebin\"",
+  "collapse-filter": false,
+  "search": "-path:\"00_META\"  -path:\"07_Resources/Cheatsheets\"  -path:\"07_Logs/Daily\"  -path:\"08_Resources/Prompts\"  -path:\"09_Lists/ToDo/KnowledgeVault-ToDo\" -path:\"09_Lists/Catalogs\" -path:\"08_Resources/Codebin\"",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -18,5 +18,5 @@
   "linkStrength": 1,
   "linkDistance": 250,
   "scale": 0.7132754626224358,
-  "close": false
+  "close": true
 }
