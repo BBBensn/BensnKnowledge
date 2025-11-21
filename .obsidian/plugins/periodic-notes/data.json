@@ -1,17 +1,18 @@
 {
   "showGettingStartedBanner": true,
-  "hasMigratedDailyNoteSettings": false,
+  "hasMigratedDailyNoteSettings": true,
   "hasMigratedWeeklyNoteSettings": false,
   "daily": {
     "format": "YYYY-MM-DD",
-    "template": "00_META/Templates/Daily-Log-Template.md",
-    "folder": "06_Logs/Daily",
+    "folder": "07_Logs/Daily",
+    "template": "00_META/Templates/Daily-Log-Template",
     "enabled": true
   },
   "weekly": {
     "format": "",
     "template": "",
-    "folder": ""
+    "folder": "",
+    "enabled": false
   },
   "monthly": {
     "format": "",

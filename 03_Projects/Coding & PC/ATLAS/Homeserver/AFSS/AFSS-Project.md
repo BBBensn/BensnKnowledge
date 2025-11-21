@@ -16,23 +16,46 @@ obsidian_form: Project-Form
 related:
   - 
 date created: 2025-11-21 01:10:15
-date modified: 2025-11-21 01:22:26
+date modified: 2025-11-21 07:21:04
 ---
+
 # AFSS-Project
 
 
 ## Übersicht
 
-AFSS besteht aus vielen einzelnen Diensten, die gemeinsam im Project AFSS gebündelt werden. Folgende Services soll das AFSS übernehmen:
+Project AFSS besteht aus vielen einzelnen Diensten, die gemeinsam in einem großen Projekt gebündelt werden. 
+### Geplante Services:
 
+Grabber:
+- s.g grabber
+- celeb grabber
+- yt-dlp grabber (xn usw)
+
+Recorder:
+- chat recorder
+
+Converter
+- Mp4 normalize
+- h264 --> h265
+
+Sonstiges:
+- Filehandler (Files werden automatisch gehandelt und von Ort zu Ort verschoben)
+
+### Geplanter Ablauf:
+
+- Eingabe per Chatbot oder GUI, Metadateneingabe direkt möglich, tags setzen evtl. artist (sonst titleabgleich), titel usw.
+- Zuordnung welcher Service zuständig ist, Überprüfen ob das File bereits vorhanden ist, wenn nicht: Auftrag wird an jeweiligen Downloader weitergeleitet.
 - Download / Data-Gathering von verschiedenen Seiten
-	- sct.gld: Vollautomatischer Grabber über doodstream Videos.
+	- sg: Vollautomatischer Grabber über doodstream Videos.
 	- Imagegrabber für celeb.cx oder ähnliche Seiten
 	- standard yt-dlp Downloader für die meisten anderen Seiten
 	- Chat-Recorder
-- automatische Sinnvolle Benennungsregeln pro Seite. 
-- Convert von allen Files die noch nicht .mp4 sind, danach recode aller mp4 in h265
-- ablegen der Files am richtigen Zielort
+- FIle normalize: Convert von allen Files die noch nicht .mp4 sind, danach recode aller mp4 in h265
+- nachdem sichergestellt wurde, dass die Recodierung erfolgreich war wird das Original gelöscht
+- Files werden am richtigen Zielort abgelegt und katalogisiert.
+- Mirroring PC <--> NAS (vorerst 2 HDD's)
+- katalogisieren
 
 ## Ziele & Scope
 
